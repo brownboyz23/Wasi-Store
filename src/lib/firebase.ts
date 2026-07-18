@@ -1,18 +1,43 @@
-import { initializeApp } from "firebase/app";
-import { initializeFirestore } from "firebase/firestore";
+import { initializeApp, getApps, getApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
+import {
+  initializeFirestore,
+  persistentLocalCache,
+  persistentMultipleTabManager,
+  getFirestore
+} from "firebase/firestore";
+import { getAnalytics, isSupported } from "firebase/analytics";
 
 const firebaseConfig = {
-  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
-  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
-  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
-  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID
+  apiKey: "AIzaSyCM148nkZhU2KU4oL1abQQhRlMVzkHFb74",
+  authDomain: "my-build-app-ea206.firebaseapp.com",
+  projectId: "my-build-app-ea206",
+  storageBucket: "my-build-app-ea206.firebasestorage.app",
+  messagingSenderId: "571060466617",
+  appId: "1:571060466617:web:4db45d91b6afa5607b7c68",
+  measurementId: "G-NFVKXQQLVF"
 };
 
-const app = initializeApp(firebaseConfig);
+// Next.js app initialization
+const app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApp();
 
-// Yeh configuration bina kisi error ke purane iOS par products load karwayegi
-export const db = initializeFirestore(app, {
-  experimentalForceLongPolling: true,
-});
+export const auth = getAuth(app);
+
+// ⚡ Back to Fast WebSockets + Smart Cache (Tested & Reliable)
+export const db = typeof window !== "undefined"
+  ? initializeFirestore(app, {
+    localCache: persistentLocalCache({
+      tabManager: persistentMultipleTabManager()
+    })
+  })
+  : getFirestore(app);
+
+export const initAnalytics = async () => {
+  if (typeof window !== "undefined") {
+    const supported = await isSupported();
+    if (supported) {
+      return getAnalytics(app);
+    }
+  }
+  return null;
+};

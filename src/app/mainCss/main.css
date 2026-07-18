@@ -625,7 +625,7 @@
     }
 
     .CardResp {
-        width: 140px;
+        width: 160px;
         height: 250px;
         box-shadow: white;
         border: 1px solid rgba(128, 128, 128, 0.393);
@@ -635,10 +635,15 @@
         margin: 0px;
     }
 
+    .fontsgs {
+        font-size: 8px;
+        font-weight: 400;
+    }
+
     .CardXrp {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 6vw;
+        gap: 7vw;
     }
 
 

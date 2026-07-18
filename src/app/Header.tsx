@@ -23,14 +23,14 @@ const HeaderPAge = () => {
     const router = useRouter()
 
     return (
-        <div className='fixed w-full  top-0 left-0 z-[999]'>
-            <div className=' sticky  backdrop-blur'>
+        <div className=''>
+            <div className='fixed w-full  top-0 left-0 z-[60] sticky  backdrop-blur'>
                 <div className='bg-black flex items-center justify-center p-5 h-20 text-white respono '>
                     <h1 className='fontB600 flex MAinNam font5 pl-2 moSizName'>WASI-<span className='clrbtn'>STORE</span></h1>
 
                     {<DropdownMenu>
                         <DropdownMenuTrigger asChild className='mosizDro'>
-                            <Button className='border-1'>
+                            <Button className='border-1 '>
                                 <FaBars />
                             </Button>
                         </DropdownMenuTrigger>

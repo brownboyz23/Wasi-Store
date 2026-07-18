@@ -88,7 +88,7 @@ const ProductsSection = () => {
                                             className='w-full h-full '
                                         />
                                         <CardHeader className='text-center langugP7   h-[150px] '>
-                                            <CardTitle className=' line-clamp-1'>
+                                            <CardTitle className=' line-clamp-1 fontsgs'>
                                                 <h1 className=''> {items.name} </h1>
                                             </CardTitle>
                                             <h1 className='mt-1'> <span className='text-red-600'>RS</span> : {items.price}  </h1>

@@ -1,0 +1,55 @@
+.aby3 {
+  border: 1px solid gray;
+}
+
+.aby3:hover {
+  border: 1px solid brown;
+
+}
+
+.mimenu {
+  width: auto;
+  height: auto;
+  background-color: rgb(116, 227, 247);
+  color: aliceblue;
+}
+
+.inptal {
+  color: aliceblue;
+  border: solid 1px black;
+  border-radius: 7px;
+}
+
+
+
+.langugP1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.langugP2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.langugP3 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.langugP4 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.langugP5 {
+  font-family: "Roboto", sans-serif;
+}
+
+.langugP6 {
+  font-family: "Playfair Display", serif;
+}
+
+.langugP7 {
+  font-family: "Rubik 80s Fade", system-ui
+}
+
+.langugP8 {
+  font-family: "Roboto Slab", serif;
+}

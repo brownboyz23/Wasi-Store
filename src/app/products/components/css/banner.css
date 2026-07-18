@@ -1,0 +1,266 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.langugP1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.langugP2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.langugP3{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.langugP4{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.langugP5{
+      font-family: "Roboto", sans-serif;
+}
+
+.langugP6{
+    font-family: "Playfair Display", serif;
+}
+
+.langugP7{
+   font-family: "Rubik 80s Fade", system-ui
+}
+
+.langugP8{
+  font-family: "Roboto Slab", serif;
+}
+
+
+
+
+
+/* fontsizes */
+
+.fontSizea{
+  font-size: 64px;  
+}
+.fontSizeb{
+  font-size: 54px;  
+}
+.fontSizec{
+  font-size: 44px;  
+}
+.fontSized{
+  font-size: 28px;  
+}
+.fontSizee{
+  font-size: 24px;  
+}
+.fontSizef{
+  font-size: 20px;  
+}
+.fontSizeg{
+  font-size: 18px;  
+}
+.fontSizeh{
+  font-size: 16px;  
+}
+.fontSizei{
+  font-size: 14px;  
+}
+.fontSizej{
+  font-size: 12px;  
+}
+.fontSizek{
+  font-size: 11px;  
+}
+
+
+
+/*  fontsBolds */
+
+.fontBolda{
+    font-weight: 900;
+}
+
+.fontBoldb{
+    font-weight: 800;
+}
+
+.fontBoldc{
+    font-weight: 700;
+}
+
+.fontBoldd{
+    font-weight: 600;
+}
+
+.fontBolde{
+    font-weight: 500;
+}
+
+.fontBoldf{
+    font-weight: 400;
+}
+
+.fontBoldg{
+    font-weight: 300;
+}
+
+.fontBolda{
+    font-weight: 100;
+}
+
+
+
+/* colors */
+
+.colorW{
+  --textWhite: #ffffff ;
+}
+.colorB{
+  --textblack: #0a0019 ;
+}
+.coloraDB{
+  --textdarkblue: #362966 ;
+}
+.coloraLB{
+  --textligtblue:#8782b5 ;
+}
+.colorR{
+  --textred: #cb1c07 ;
+}
+.colorLRB{
+  --textLighterblue: #b5b0e0 ;
+}
+.colorYO{
+  --textyellowOrg: #c99b24 ;
+}
+.colorSB{
+  --textskyblue: #4d8cc6 ;
+}
+.colorLDB{
+  --textlightdarkBlue: #464aa2 ;
+}
+.colorLY{
+  --textlightYellow: #d1d76b ;
+}
+.colorLG{
+  --textlightgreen: #b0c647 ;
+}
+.colorTLG{
+  --textthinlightgreen: #b0c647 ;
+}
+.colorLDR{
+  --textlightdarkred: #c21300 ;
+}
+.colorD{
+  --textdark: #ffffff1a ;
+}
+.colorLD{
+  --textlightdark: #ffffff26 ;
+}
+.colorP{
+  --textpurple: #7c3dc1 ;
+}
+.colorWk{
+  --textwatersky: #5a96c0 ;
+}
+.colorLP{
+  --textlightpurple: #a36ed1 ;
+}
+.colorOE{
+  --textorenge: #c99428 ;
+}
+.colorGry{
+    --textgray:#333333;
+}
+.colorGry{
+    --textgray:#444444;
+}
+.colorGry{
+    --textgray:#666666;
+}
+.colorGry{
+    --textgray:#777777;
+}
+
+
+
+
+
+
+
+
+
+/* background Colors*/
+.bgrndW{
+  --textWhite: #ffffff ;
+}
+.bgrndB{
+  --textblack: #0a0019 ;
+}
+.bgrndaDB{
+  --textdarkblue: #362966 ;
+}
+.bgrndaLB{
+  --textligtblue:#8782b5 ;
+}
+.bgrndR{
+  --textred: #cb1c07 ;
+}
+.bgrndLRB{
+  --textLighterblue: #b5b0e0 ;
+}
+.bgrndYO{
+  --textyellowOrg: #c99b24 ;
+}
+.bgrndSB{
+  --textskyblue: #4d8cc6 ;
+}
+.bgrndLDB{
+  --textlightdarkBlue: #464aa2 ;
+}
+.bgrndLY{
+  --textlightYellow: #d1d76b ;
+}
+.bgrndLG{
+  --textlightgreen: #b0c647 ;
+}
+.bgrndTLG{
+  --textthinlightgreen: #b0c647 ;
+}
+.bgrndLDR{
+  --textlightdarkred: #c21300 ;
+}
+.bgrndD{
+  --textdark: #ffffff1a ;
+}
+.bgrndLD{
+  --textlightdark: #ffffff26 ;
+}
+.bgrndP{
+  --textpurple: #7c3dc1 ;
+}
+.bgrndWk{
+  --textwatersky: #5a96c0 ;
+}
+.bgrndLP{
+  --textlightpurple: #a36ed1 ;
+}
+.bgrndOE{
+  --textorenge: #c99428 ;
+}
+.bgrndGry{
+    --textgray:#333333;
+}
+.bgrndGry{
+    --textgray:#444444;
+}
+.bgrndGry{
+    --textgray:#666666;
+}
+.bgrndGry{
+    --textgray:#777777;
+}

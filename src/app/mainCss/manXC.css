@@ -1,0 +1,583 @@
+@media screen and (min-width:1200px) {
+
+    .cstorproHd {
+        font-size: 37px;
+        font-weight: 700;
+    }
+
+    .cstorproDc {
+        margin-top: -1vw;
+        font-size: 18px;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 3vw;
+    }
+
+
+    .customiSel {
+        gap: 2vw;
+    }
+
+    .fturproFX {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fturproF {
+        width: 100%;
+        height: 300px;
+    }
+
+    .ctgbtn {
+        width: 130px;
+        height: 35px;
+        border-radius: 5px;
+    }
+
+
+    .custodev {
+        width: 360px;
+        height: 435px;
+        font-size: 10px;
+        font-weight: 400;
+        box-sizing: border-box;
+    }
+
+    .custodevIm {
+        width: 300px;
+        height: 290px;
+        padding: 0px;
+    }
+
+    .customiSel {
+        gap: 3vw;
+    }
+
+    .custodevHd {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .custodevC {
+        width: 100%;
+        height: 100px;
+    }
+
+
+    .ctgbtnSp {
+        width: 100px;
+        height: 30px;
+        border-radius: 5px;
+        border: 1px solid;
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width : 1199px) {
+
+    .cstorpro {
+        width: 80%;
+        height: 460px;
+    }
+
+    .cstorproHd {
+        font-size: 35px;
+        font-weight: 700;
+    }
+
+    .cstorproDc {
+        font-size: 18px;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 4vw;
+    }
+
+    .ctgbtn {
+        width: 120px;
+        height: 30px;
+        border-radius: 5px;
+    }
+
+    .fturproFX {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fturproF {
+        width: 100%;
+        height: 300px;
+    }
+
+    .custodev {
+        width: 300px;
+        height: 370px;
+        font-size: 10px;
+        font-weight: 400;
+        box-sizing: border-box;
+    }
+
+
+    .customiSel {
+        gap: 3vw;
+    }
+
+    .custodevIm {
+        width: 300px;
+        height: 220px;
+    }
+
+    .custodevHd {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .custodevC {
+        width: 100%;
+        height: 100px;
+    }
+
+    .ctgbtnSp {
+        width: 100px;
+        height: 30px;
+        border-radius: 5px;
+        border: 1px solid;
+        font-size: 13px;
+    }
+}
+
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+
+    .cstorpro {
+        width: 80%;
+        height: 400px;
+    }
+
+    .cstorproHd {
+        font-size: 30px;
+        font-weight: 600;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .cstorproDc {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 4vw;
+    }
+
+    .ctgbtn {
+        width: 100px;
+        height: 28px;
+        border-radius: 5px;
+    }
+
+    .cstprocx {
+        width: 100%;
+        height: 100%;
+        gap: 0px;
+
+    }
+
+    .cstproxsc {
+        width: 300px;
+    }
+
+
+    .fturproFX {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fturproF {
+        width: 100%;
+        height: 300px;
+    }
+
+    .custodev {
+        width: 300px;
+        height: 370px;
+        font-size: 10px;
+        font-weight: 400;
+        box-sizing: border-box;
+    }
+
+
+    .customiSel {
+        gap: 4vw;
+    }
+
+    .custodevIm {
+        width: 300px;
+        height: 220px;
+    }
+
+    .custodevHd {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .custodevC {
+        width: 100%;
+        height: 100px;
+    }
+
+    .ctgbtnSp {
+        width: 80px;
+        height: 30px;
+        border-radius: 5px;
+        border: 1px solid;
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (min-width:480px) and (max-width:767px) {
+
+    .cstorpro {
+        width: 100%;
+        height: 380px;
+        margin-top: 20px;
+    }
+
+    .cstorproHd {
+        font-size: 27px;
+        font-weight: 600;
+        margin-bottom: 5px;
+        margin-top: 20px;
+    }
+
+    .cstorproDc {
+        width: 100%;
+        height: 180px;
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 400;
+        overflow: hidden;
+    }
+
+    .customiSelxc {
+        width: 100%;
+        height: 280px;
+        padding: 10px;
+        gap: 1px;
+    }
+
+    .ctgbtn {
+        width: 60px;
+        font-size: 8px;
+        font-weight: 400;
+        height: 25px;
+        border-radius: 3px;
+        margin-left: 10vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ctgbtnxy {
+        height: 27px;
+        overflow-x: hidden;
+        object-fit: fill;
+    }
+
+
+    .fturproFX {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fturproF {
+        width: 100%;
+        height: 300px;
+    }
+
+    .custodevMai {
+        width: 200px;
+    }
+
+    .custodev {
+        width: 200px;
+        height: 250px;
+        font-size: 10px;
+        font-weight: 400;
+        box-sizing: border-box;
+    }
+
+
+    .customiSel {
+        gap: 4vw;
+    }
+
+    .custodevIm {
+        width: 200px;
+        height: 130px;
+    }
+
+    .custodevHd {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .custodevC {
+        width: 100%;
+        height: 50px;
+    }
+
+    .ctgbtnSp {
+        width: 60px;
+        height: 25px;
+        border: 1px solid;
+        border-radius: 5px;
+        font-size: 9px;
+    }
+
+    /* .cskminx {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-top: 12vw;
+    } */
+
+
+}
+
+
+@media screen and (min-width:320px) and (max-width:479px) {
+    .cstmiSlxc {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding: 10px;
+    }
+
+    .cstmiSlxe {
+        width: 130px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+        margin-left: -10vw;
+        gap: 0px;
+    }
+
+    .cstorpro {
+        width: 300px;
+        height: 380px;
+        margin-top: 12vw;
+
+    }
+
+    .cstorproHd {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 5px;
+        margin-top: 7vw;
+    }
+
+    .cstorproDc {
+        width: 100%;
+        height: 200px;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        overflow: hidden;
+    }
+
+    .cstproxs {
+        padding: 0px;
+    }
+
+    /* .ctgbtn {
+        width: 80px;
+        height: 30px;
+        font-size: 12px;
+        border-radius: 2px;
+    } */
+
+    .ctgbtnxy {
+        height: 30px;
+        overflow-x: hidden;
+        object-fit: fill;
+    }
+
+    .fturproFX {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fturproF {
+        width: 100%;
+        height: 300px;
+    }
+
+
+
+    .custodev {
+        width: 300px;
+        height: 300px;
+        font-size: 10px;
+        font-weight: 400;
+        box-sizing: border-box;
+    }
+
+
+    .customiSel {
+        gap: 10vw;
+    }
+
+    /* .customiSelxc {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    } */
+
+
+    .custodevIm {
+        width: 300px;
+        height: 185px;
+        padding: 0px;
+    }
+
+    .custodevHd {
+        width: 100%;
+        height: 30px;
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    .custodevC {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ctgbtnSp {
+        width: 60px;
+        height: 25px;
+        border: 1px solid;
+        border-radius: 5px;
+        font-size: 9px;
+    }
+
+    .ctgbtn {
+        width: 65px;
+        font-size: 9px;
+        font-weight: 400;
+        height: 30px;
+        border-radius: 3px;
+        margin-left: 10vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .custodevMai {
+        width: 200px;
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* .cskminx {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        margin-top: 12vw;
+    } */
+
+    /* payment Modal */
+
+    .cspymn {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .cspymnxs {
+        width: 250px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0px
+    }
+
+    .spcxsm {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .spcxsN {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 10px;
+
+    }
+
+    .pynam {
+        margin-left: 0px;
+    }
+
+
+    .spcxs {
+        width: 80px;
+        height: 30px;
+    }
+
+    .spcxsx {
+        width: 100px;
+        height: 30px;
+    }
+
+    .spcxe {
+        width: 90px;
+        height: 30px;
+    }
+
+    .spcxeBi {
+        width: 220px;
+        height: 30px;
+    }
+}

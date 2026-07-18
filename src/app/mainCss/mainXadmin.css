@@ -1,0 +1,645 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+@media screen and (min-width:1200px) {
+
+    .dshbpxx {
+        width: 100%;
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .dshbpIm {
+        width: 80px;
+        height: 65px;
+        border: none;
+        object-fit: fill;
+
+    }
+
+    .dshbpHD {
+        width: 120px;
+        height: 100%;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .dshbsx {
+        width: 100%;
+        height: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .dshbpNM {
+        width: 120px;
+        height: 100%;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .dshbpbtn {
+        width: 65px;
+        height: 100%;
+    }
+
+    .DhNam {
+        font-size: 25px;
+        font-weight: 600;
+        margin-top: 20px;
+    }
+
+    .dshbpx {
+        width: 50px;
+        height: 100%;
+        margin-left: 5px;
+        font-size: 11px;
+        font-weight: 400;
+    }
+
+    .dbpxs {
+        width: 20px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: -8px;
+    }
+
+    .ctgbtn {
+        width: 80px;
+        height: 30px;
+        border-radius: 3px;
+    }
+}
+
+
+@media screen and (min-width:1024px) and (max-width : 1199px) {
+
+    .dshbpxFx {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    .dshbpxF {
+        width: 450px;
+        height: 240px;
+        display: flex;
+        padding: 5px;
+    }
+
+
+    .dshbpxx {
+        width: 100%;
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .dshbpIm {
+        width: 60px;
+        height: 65px;
+        border: none;
+        object-fit: fill;
+
+    }
+
+    .dshbpHD {
+        width: 100px;
+        height: 100%;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .dshbsx {
+        width: 430px;
+        height: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding: 0px;
+
+    }
+
+    .dshbpNM {
+        width: 100px;
+        height: 100%;
+        font-size: 11px;
+        font-weight: 600;
+    }
+
+    .dshbpbtn {
+        width: 65px;
+        height: 100%;
+    }
+
+    .DhNam {
+        font-size: 25px;
+        font-weight: 600;
+        margin-top: 20px;
+    }
+
+    .dshbpx {
+        width: 70px;
+        height: 100%;
+        margin-left: 5px;
+        font-size: 11px;
+        font-weight: 400;
+    }
+
+    .ctgbtn {
+        width: 75px;
+        height: 30px;
+        border-radius: 3px;
+    }
+}
+
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .dshbpxFx {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .dshbpxF {
+        width: 380px;
+        height: 240px;
+        display: flex;
+        padding: 5px;
+    }
+
+
+    .dshbpxx {
+        width: 100%;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dshbpIm {
+        width: 60px;
+        height: 65px;
+        border: none;
+        object-fit: fill;
+
+    }
+
+    .dshbpHD {
+        width: 120px;
+        height: 100%;
+        font-size: 12px;
+        font-weight: 500;
+        margin-left: -15px;
+    }
+
+    .dshbsx {
+        width: 340px;
+        height: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding: 0px;
+
+    }
+
+    .dshbpNM {
+        width: 100px;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 10px;
+        font-weight: 400;
+    }
+
+    .dshbpbtn {
+        width: 65px;
+        height: 100%;
+    }
+
+    .DhNam {
+        font-size: 25px;
+        font-weight: 600;
+        margin-top: 20px;
+    }
+
+    .dshbpx {
+        width: 70px;
+        height: 100%;
+        margin-left: 5px;
+        font-size: 11px;
+        font-weight: 400;
+    }
+
+    .uprstr {
+        width: 40px;
+    }
+
+    .ctgbtn {
+        width: 70px;
+        height: 30px;
+        border-radius: 3px;
+    }
+
+
+}
+
+@media screen and (min-width:600px) and (max-width:767px) {
+    .dshbpxFx {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: -20px;
+        gap: 5px;
+    }
+
+    .dshbpxF {
+        width: 285px;
+        height: 220px;
+        display: flex;
+        padding: 5px;
+    }
+
+
+    .dshbpxx {
+        width: 280px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dshbpIm {
+        width: 50px;
+        height: 40px;
+        border: none;
+        object-fit: fill;
+
+    }
+
+    .dshbpHD {
+        width: 100px;
+        height: 100%;
+        font-size: 9px;
+        font-weight: 500;
+        margin-left: -15px;
+    }
+
+    .dshbsx {
+        width: 230px;
+        height: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding: 0px;
+
+    }
+
+    .dshbpNM {
+        width: 77px;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 10px;
+        font-weight: 400;
+    }
+
+    .dshbpbtn {
+        width: 65px;
+        height: 100%;
+    }
+
+    .DhNam {
+        font-size: 25px;
+        font-weight: 600;
+        margin-top: 20px;
+    }
+
+    .dshbpx {
+        width: 40px;
+        height: 100%;
+        margin-left: 5px;
+        font-size: 9px;
+        font-weight: 400;
+    }
+
+    .dbpxs {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        margin-top: -5px;
+    }
+
+    .uprstr {
+        width: 40px;
+    }
+}
+
+@media screen and (min-width:480px) and (max-width:599px) {
+
+    .dshbpxFxk {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dshbpxFx {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .dshbpxF {
+        width: 400px;
+        height: 220px;
+        display: flex;
+        padding: 5px;
+    }
+
+
+    .dshbpxx {
+        width: 100%;
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .dshbpIm {
+        width: 50px;
+        height: 40px;
+        border: none;
+        object-fit: fill;
+
+    }
+
+    .dshbpHD {
+        width: 100%;
+        height: 100%;
+        font-size: 9px;
+        font-weight: 500;
+        margin-left: -3vw;
+    }
+
+    .dshbpNM {
+        width: 100%;
+        height: 100%;
+        font-size: 10px;
+        font-weight: 400;
+    }
+
+    .dshbpbtn {
+        width: 65px;
+        height: 100%;
+    }
+
+    .DhNam {
+        font-size: 25px;
+        font-weight: 600;
+        margin-top: 20px;
+    }
+
+    .dshbpx {
+        width: 50px;
+        height: 100%;
+        margin-left: 5px;
+        font-size: 9px;
+        font-weight: 400;
+    }
+
+    .dbpxs {
+        width: 30px;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        margin-top: -5px;
+    }
+
+    .uprstr {
+        width: 40px;
+    }
+
+    .hplscsdxs {
+        width: 400px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+
+    .hplscsd {
+        width: 200px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 2px;
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+
+    .hplscsdxxs {
+        width: 100%;
+        height: 330px;
+    }
+
+    .hplscsde {
+        width: 300px;
+        height: 35px;
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+
+    .hplscsdeN {
+        width: 100%;
+        height: 40px;
+        padding: 0px;
+        font-size: 15px;
+    }
+
+    .ctgbtn {
+        width: 70px;
+        height: 25px;
+        border-radius: 3px;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:479px) {
+    .dshbpxFxk {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dshbpxFx {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .dshbpxF {
+        width: 320px;
+        height: 220px;
+        display: flex;
+        padding: 5px;
+    }
+
+
+    .dshbpxx {
+        width: 100%;
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .dshbpIm {
+        width: 50px;
+        height: 50px;
+        border: none;
+        object-fit: fill;
+
+    }
+
+    .dshbpHD {
+        width: 100%;
+        height: 100%;
+        font-size: 9px;
+        font-weight: 500;
+        margin-left: -3vw;
+    }
+
+    .dshbpNM {
+        width: 100%;
+        height: 100%;
+        font-size: 10px;
+        font-weight: 400;
+    }
+
+    .dshbpbtn {
+        width: 65px;
+        height: 100%;
+    }
+
+    .DhNam {
+        font-size: 25px;
+        font-weight: 600;
+        margin-top: 20px;
+    }
+
+    .dshbpx {
+        width: 50px;
+        height: 100%;
+        margin-left: 5px;
+        font-size: 9px;
+        font-weight: 400;
+    }
+
+    .dbpxs {
+        width: 30px;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        margin-top: -5px;
+    }
+
+    .uprstr {
+        width: 40px;
+    }
+
+    .hplscsdxs {
+        width: 300px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .hplscsd {
+        width: 200px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 2px;
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+
+    .hplscsdxxs {
+        width: 100%;
+        height: 330px;
+    }
+
+    .hplscsde {
+        width: 200px;
+        height: 35px;
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+
+    .hplscsdeN {
+        width: 100%;
+        height: 40px;
+        padding: 0px;
+        font-size: 15px;
+    }
+
+    .ctgbtn {
+        width: 65px;
+        height: 25px;
+        border-radius: 3px;
+    }
+
+
+}

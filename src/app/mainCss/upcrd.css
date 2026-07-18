@@ -1,0 +1,295 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+@media screen and (min-width: 1200px) {
+    .crdupx {
+        width: 100%;
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .crdupxm {
+        width: 300px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .crdupxIm {
+        width: 100%;
+        height: 200px;
+        padding: 5px;
+    }
+
+    .crdupxsm {
+        width: 100%;
+        height: 220px;
+    }
+
+    .crdupxbtn {
+        margin-right: 10px;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width:1199px) {
+    .crdupx {
+        width: 300px;
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .crdupxm {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .crdupxIm {
+        width: 100%;
+        height: 280px;
+        padding: 5px;
+    }
+
+    .crdupxsm {
+        width: 100%;
+        height: 130px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    .crdupxbtn {
+        margin-right: 10px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .crdupxHn {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .crdupxnM {
+        width: 100%;
+        height: 40px;
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 0px;
+        line-clamp: 1;
+        overflow-y: hidden;
+    }
+
+    .crdupxbtnb {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1023px) {
+    .crdupx {
+        width: 300px;
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .crdupxm {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .crdupxIm {
+        width: 100%;
+        height: 280px;
+        padding: 5px;
+    }
+
+    .crdupxsm {
+        width: 100%;
+        height: 130px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    .crdupxbtn {
+        margin-right: 10px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .crdupxHn {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .crdupxnM {
+        width: 100%;
+        height: 40px;
+        font-size: 13px;
+        font-weight: 400;
+        margin-bottom: 0px;
+        overflow-y: hidden;
+    }
+
+    .crdupxbtnb {
+        margin-top: 20px;
+        width: 150px;
+        height: 30px;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width:767px) {
+    .crdupx {
+        width: 280px;
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .crdupxm {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .crdupxIm {
+        width: 280px;
+        height: 280px;
+        padding: 15px;
+        object-fit: fill;
+    }
+
+    .crdupxsm {
+        width: 280px;
+        height: 130px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    .crdupxbtn {
+        margin-right: 10px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .crdupxHn {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .crdupxnM {
+        font-size: 13px;
+        font-weight: 400;
+        margin-bottom: 0px;
+        overflow-y: hidden;
+    }
+
+    .crdupxbtnb {
+        margin-top: 20px;
+        width: 150px;
+        height: 30px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width:479px) {
+
+    .crdupx {
+        width: 100%;
+        height: 350px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        margin-left: 30px;
+    }
+
+    .crdupxfs {
+        width: 250px;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .crdupxm {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .crdupxIm {
+        width: 250px;
+        height: 120px;
+        object-fit: fill;
+    }
+
+    .crdupxsm {
+        width: 100%;
+        height: 130px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .crdupxbtn {
+        width: 30px;
+        height: 30px;
+        position: absolute !important;
+        bottom: 18vw !important;
+        right: 12vw !important;
+        z-index: 10 !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .crdupxHn {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .crdupxnM {
+        width: 200px;
+        font-size: 11px;
+        font-weight: 400;
+        margin-bottom: 0px;
+        line-clamp: 2;
+    }
+
+    .crdupxbtnb {
+        margin-top: 10px;
+        width: 150px;
+        height: 30px;
+    }
+}

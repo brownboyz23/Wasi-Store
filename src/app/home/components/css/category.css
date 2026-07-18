@@ -1,0 +1,17 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.imgwsizeX{
+    width: 110px;
+    height:70px;
+    object-fit: cover;
+    background-position: center;
+}
+
+.langugC1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+

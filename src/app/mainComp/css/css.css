@@ -1,0 +1,155 @@
+html , body {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.langugP1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.langugP2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.langugP3 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.langugP4 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.langugP5 {
+  font-family: "Roboto", sans-serif;
+}
+
+.langugP6 {
+  font-family: "Playfair Display", serif;
+}
+
+.langugP7 {
+  font-family: "Rubik 80s Fade", system-ui
+}
+
+
+
+
+
+
+
+.fontSizea {
+  font-size: 64px;
+}
+
+.fontSizeb {
+  font-size: 54px;
+}
+
+.fontSizec {
+  font-size: 44px;
+}
+
+.fontSized {
+  font-size: 28px;
+}
+
+.fontSizee {
+  font-size: 24px;
+}
+
+.fontSizef {
+  font-size: 20px;
+}
+
+.fontSizeg {
+  font-size: 18px;
+}
+
+.fontSizeh {
+  font-size: 16px;
+}
+
+.fontSizei {
+  font-size: 14px;
+}
+
+
+
+/*  fontsBolds */
+
+.fontBolda {
+  font-weight: 900;
+}
+
+.fontBoldb {
+  font-weight: 800;
+}
+
+.fontBoldc {
+  font-weight: 700;
+}
+
+.fontBoldd {
+  font-weight: 600;
+}
+
+.fontBolde {
+  font-weight: 500;
+}
+
+.fontBoldf {
+  font-weight: 400;
+}
+
+.fontBoldg {
+  font-weight: 300;
+}
+
+.fontBolda {
+  font-weight: 100;
+}

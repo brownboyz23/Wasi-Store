@@ -1,0 +1,90 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+
+.banerLinear {
+  position: relative;
+}
+
+.banerLinear::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 5;
+}
+
+
+.langugX1 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.langugX2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.wrdAnim {
+  display: inline-block;
+  vertical-align: bottom;
+  width: 0;
+  animation: typewriter-effect 5s steps(50, start) 0.5s forwards;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.wrdAnimtn {
+  color: transparent;
+  opacity: 0;
+  text-shadow: -50px -40px 4px #06b6d4, 18px 20px 3px #ef4444, -40px 50px 2px #ffffff, 40px -50px 5px #06b6d4;
+  filter: blur(8px);
+  transform: scale(1.4);
+  animation: dot-to-letter 1.2s ease-out forwards;
+}
+
+
+
+
+
+@keyframes typewriter-effect {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes dot-to-letter {
+  0% {
+    opacity: 0;
+    transform: scale(1.4);
+    filter: blur(8px);
+    color: transparent;
+    text-shadow: 20px 15px 4px #06b6d4, 18px 20px 3px #ef4444, 21px 17px 2px #ffffff, 20px 15px 5px #06b6d4;
+
+  }
+
+  60% {
+    opacity: 0.8;
+    transform: scale(0.95);
+    filter: blur(2px);
+    color: transparent;
+    text-shadow: 20px 15px 4px #06b6d4, 18px 20px 3px, #ef4444 21px 17px 2px #ffffff, 20px 15px 5px #06b6d4;
+
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0px);
+    color: red;
+    /* text-shadow: 20px 15px 4px #06b6d4 18px 20px 3px #ef4444 21px 17px 2px #ffffff 20px 15px 5px #06b6d4; */
+    text-shadow: 0px 0px 0px transparent;
+  }
+}

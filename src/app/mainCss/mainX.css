@@ -1,0 +1,196 @@
+@media screen and (min-width:1200px) {
+
+    .CardResp {
+        width: 190px;
+        height: 300px;
+        box-shadow: white;
+        border: 1px solid rgba(128, 128, 128, 0.393);
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .CardXrp {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 2vw;
+        margin-top: 6vw;
+    }
+
+    .proheading {
+        font-size: 25px;
+        font-weight: 600;
+        font-family: "Bricolage Grotesque", sans-serif;
+    }
+
+    .proTitle {
+        font-size: 22px;
+        font-weight: 500;
+        color: rgba(128, 128, 128, 0.544);
+    }
+
+    .ctgbtn {
+        width: 100px;
+        height: 27px;
+        border-radius: 4px;
+    }
+
+}
+
+@media screen and (min-width:1024px) and (max-width : 1199px) {
+
+    .CardResp {
+        width: 200px;
+        height: 300px;
+        box-shadow: white;
+        border: 1px solid rgba(128, 128, 128, 0.393);
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .CardXrp {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 4vw;
+        margin-top: 6vw;
+    }
+
+    .ctgbtn {
+        width: 95px;
+        height: 27px;
+        border-radius: 4px;
+    }
+
+    .proheading {
+        font-size: 24px;
+        font-weight: 600;
+        font-family: "Bricolage Grotesque", sans-serif;
+    }
+
+    .proTitle {
+        font-size: 20px;
+        font-weight: 500;
+        color: rgba(128, 128, 128, 0.544);
+
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+
+    .CardResp {
+        width: 200px;
+        height: 330px;
+        box-shadow: white;
+        border: 1px solid rgba(128, 128, 128, 0.393);
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .CardXrp {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 5vw;
+        margin-top: 6vw;
+    }
+
+    .ctgbtn {
+        width: 90px;
+        height: 27px;
+        border-radius: 4px;
+    }
+
+    .proheading {
+        font-size: 23px;
+        font-weight: 600;
+        font-family: "Bricolage Grotesque", sans-serif;
+    }
+
+    .proTitle {
+        font-size: 18px;
+        font-weight: 400;
+        color: rgba(128, 128, 128, 0.544);
+    }
+
+}
+
+@media screen and (min-width:480px) and (max-width:767px) {
+    .CardResp {
+        width: 220px;
+        height: 350px;
+        box-shadow: white;
+        border: 1px solid rgba(128, 128, 128, 0.393);
+        box-sizing: border-box;
+    }
+
+    .CardXrp {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 3vw;
+        margin-top: 6vw;
+        padding: 10px;
+    }
+
+    .ctgbtn {
+        width: 90px;
+        height: 25px;
+        border-radius: 4px;
+    }
+
+    .proTitle {
+        font-size: 15px;
+        font-weight: 400;
+        color: rgba(128, 128, 128, 0.544);
+    }
+
+    .proheading {
+        font-size: 22px;
+        font-weight: 600;
+        font-family: "Bricolage Grotesque", sans-serif;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:479px) {
+    .ctgProxs {
+        width: 20px;
+        height: 100%;
+        font-size: 10px;
+    }
+
+    .CardResp {
+        width: 140px;
+        height: 250px;
+        box-shadow: white;
+        border: 1px solid rgba(128, 128, 128, 0.393);
+        box-sizing: border-box;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .CardXrp {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 6vw;
+        padding: 5px;
+        margin-top: 30px;
+    }
+
+    .ctgbtn {
+        width: 65px;
+        height: 18px;
+        border-radius: 3px;
+    }
+
+    .proheading {
+        font-size: 20px;
+        font-weight: 600;
+        font-family: "Bricolage Grotesque", sans-serif;
+    }
+
+    .proTitle {
+        font-size: 13px;
+        font-weight: 600;
+        color: rgba(182, 179, 179, 0.68);
+    }
+
+}

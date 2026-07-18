@@ -27,7 +27,6 @@ const HeaderPAge = () => {
             <div className='fixed w-full  top-0 left-0 z-[60] sticky  backdrop-blur'>
                 <div className='bg-black flex items-center justify-center p-5 h-20 text-white respono '>
                     <h1 className='fontB600 flex MAinNam font5 pl-2 moSizName'>WASI-<span className='clrbtn'>STORE</span></h1>
-
                     {<DropdownMenu>
                         <DropdownMenuTrigger asChild className='mosizDro'>
                             <Button className='border-1 '>
@@ -35,26 +34,28 @@ const HeaderPAge = () => {
                             </Button>
                         </DropdownMenuTrigger>
                         <DropdownMenuContent>
-                            <nav className='mosizDrown'>
-                                <DropdownMenuItem asChild>
-                                    <Link href={'/'} className=' Dropname font2'>Home</Link>
-                                </DropdownMenuItem>
-                                <DropdownMenuItem asChild>
-                                    <Link href={'/products'} className=' Dropname fontB400 font2 '>Products</Link>
-                                </DropdownMenuItem>
-                                <DropdownMenuItem asChild>
-                                    <Link href={'/Customize'} className=' Dropname fontB400 font2 '>Customize</Link>
-                                </DropdownMenuItem>
-                                <DropdownMenuItem asChild>
-                                    <Link href={'/Dashboard'} className=' Dropname fontB400 font2 '>Dashboard</Link>
-                                </DropdownMenuItem>
-                                <DropdownMenuItem asChild>
-                                    <Link href={'/helpCenter'} className=' Dropname fontB400 font2 '>Help-Center</Link>
-                                </DropdownMenuItem>
-                                <DropdownMenuItem asChild>
-                                    <Link href={'/Admin'} className=' Dropname fontB400 font2 ' hidden>AdminPage</Link>
-                                </DropdownMenuItem>
-                            </nav>
+                            <div className='mosizDrownUp'>
+                                <nav className='mosizDrown'>
+                                    <DropdownMenuItem asChild>
+                                        <Link href={'/'} className=' Dropname font2'>Home</Link>
+                                    </DropdownMenuItem>
+                                    <DropdownMenuItem asChild>
+                                        <Link href={'/products'} className=' Dropname fontB400 font2 '>Products</Link>
+                                    </DropdownMenuItem>
+                                    <DropdownMenuItem asChild>
+                                        <Link href={'/Customize'} className=' Dropname fontB400 font2 '>Customize</Link>
+                                    </DropdownMenuItem>
+                                    <DropdownMenuItem asChild>
+                                        <Link href={'/Dashboard'} className=' Dropname fontB400 font2 '>Dashboard</Link>
+                                    </DropdownMenuItem>
+                                    <DropdownMenuItem asChild>
+                                        <Link href={'/helpCenter'} className=' Dropname fontB400 font2 '>Help-Center</Link>
+                                    </DropdownMenuItem>
+                                    <DropdownMenuItem asChild>
+                                        <Link href={'/Admin'} className=' Dropname fontB400 font2 ' hidden>AdminPage</Link>
+                                    </DropdownMenuItem>
+                                </nav>
+                            </div>
                         </DropdownMenuContent>
                     </DropdownMenu>}
                     <div className='respnv'>

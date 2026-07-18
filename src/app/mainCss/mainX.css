@@ -157,7 +157,7 @@
 
     .CardResp {
         width: 140px;
-        height: 250px;
+        height: 300px;
         box-shadow: white;
         border: 1px solid rgba(128, 128, 128, 0.393);
         box-sizing: border-box;
@@ -192,5 +192,22 @@
         font-weight: 600;
         color: rgba(182, 179, 179, 0.68);
     }
+
+
+    .fontsgs {
+        font-size: 10px;
+        font-weight: 400;
+    }
+
+    .fontPric {
+        font-size: 10px;
+        font-weight: 400;
+    }
+
+    .fontDesc {
+        font-size: 9px;
+        font-weight: 400;
+    }
+
 
 }

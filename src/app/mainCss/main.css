@@ -561,14 +561,21 @@
         top: 19px;
     }
 
-    .mosizDrown {
-        width: 430px;
+    .mosizDrownUp {
+        width: 479px;
         height: 200px;
+    }
+
+    .mosizDrown {
+        width: 100%;
+        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
         line-height: 30px;
+        margin-top: -5px;
     }
 
     .moSizLog {
@@ -625,25 +632,249 @@
     }
 
     .CardResp {
-        width: 160px;
-        height: 250px;
+        width: 140px;
+        height: 300px;
         box-shadow: white;
         border: 1px solid rgba(128, 128, 128, 0.393);
         box-sizing: border-box;
-        overflow: hidden;
         padding: 0px;
         margin: 0px;
     }
 
     .fontsgs {
-        font-size: 8px;
+        font-size: 10px;
         font-weight: 400;
     }
 
     .CardXrp {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 7vw;
+        gap: 6vw;
+    }
+
+
+    .fturproFX {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fturproF {
+        width: 90%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        line-height: 10px;
+    }
+
+    .fturPro {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .fturProx {
+        font-size: 10px;
+        font-weight: 500;
+    }
+
+    .fturProHN {
+        font-size: 20px;
+        font-weight: 600;
+        font-family: "Bricolage Grotesque", sans-serif;
+    }
+
+    .respono {
+        /* margin-top: 5px; */
+    }
+
+    .chosProx {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .chosepros {
+        width: 70px;
+        height: 80px;
+        font-size: 10px;
+        font-weight: 400;
+        padding: 3px;
+    }
+
+    .slidProx {
+        width: 100%;
+        height: 200px;
+    }
+
+    .slidbtn {
+        margin-left: 25px;
+    }
+
+    .choseproxs {
+        width: 30px;
+    }
+
+    .MAinNam {
+        font-size: 17px;
+    }
+
+    .respnv {
+        display: none;
+    }
+
+    .respnv4 {
+        display: none;
+    }
+
+    .banrName {
+        font-size: 40px;
+    }
+
+    .redBanr {
+        font-size: 30px;
+    }
+
+    /* Footer */
+    .ftrH {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 7px;
+        font-weight: 400;
+
+    }
+
+    .ctgbtn {
+        width: 70px;
+        height: 23px;
+        border-radius: 3px;
+    }
+
+    .responXX {
+        margin-left: 10px;
+    }
+
+}
+
+@media screen and (max-width:320px) {
+
+    .mosizDro {
+        width: 35px;
+        height: 35px;
+        background: transparent;
+        color: aliceblue;
+        position: absolute;
+        right: 12px;
+        top: 19px;
+    }
+
+    .mosizDrownUp {
+        width: 479px;
+        height: 200px;
+    }
+
+    .mosizDrown {
+        width: 320px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        line-height: 30px;
+        margin-top: -5px;
+    }
+
+    .moSizLog {
+        width: 40px;
+        height: 40px;
+        background: transparent;
+        position: absolute;
+        left: 7px;
+        top: 12px;
+    }
+
+    .Dropname {
+        width: 100%;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        font-weight: 400;
+        border-bottom: 1px solid white;
+        background: gray;
+    }
+
+    .fonte {
+        font-size: 11px;
+        font-weight: 600;
+        margin-left: 7px;
+        margin-top: -5px;
+    }
+
+    .responCt {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+        font-weight: 400;
+    }
+
+    .responCtX {
+        width: 60px;
+        height: 50px;
+        box-sizing: border-box;
+        display: flex;
+    }
+
+    .responCtXi {
+        position: absolute;
+        border-radius: 3px;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.41);
+        z-index: 99;
+    }
+
+    .CardResp {
+        width: 140px;
+        height: 300px;
+        box-shadow: white;
+        border: 1px solid rgba(128, 128, 128, 0.393);
+        box-sizing: border-box;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .fontsgs {
+        font-size: 10px;
+        font-weight: 400;
+    }
+
+    .fontPric {
+        font-size: 10px;
+        font-weight: 400;
+    }
+
+    .fontDesc {
+        font-size: 9px;
+        font-weight: 400;
+    }
+
+    .CardXrp {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 6vw;
     }
 
 

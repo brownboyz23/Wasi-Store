@@ -81,11 +81,11 @@ const LMProducts = () => {
                                     className='w-full h-full'
                                 />
                                 <CardHeader className='text-center langugP7  h-[150px] '>
-                                    <CardTitle className=' line-clamp-1'>
+                                    <CardTitle className=' line-clamp-1 fontsgs'>
                                         <h1 className='mb-2'> {items.name} </h1>
                                     </CardTitle>
-                                    <h1> <span className='text-red-600'>RS</span> : {items.price}  </h1>
-                                    <CardDescription className='line-clamp-2'>
+                                    <h1 className='fontPric'> <span className='text-red-600'>RS</span> : {items.price}  </h1>
+                                    <CardDescription className='line-clamp-2 fontDesc'>
                                         <h1> {items.desc} </h1>
                                     </CardDescription>
                                 </CardHeader>

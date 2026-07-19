@@ -101,7 +101,7 @@ const Storage = () => {
                   <FaStar />
                 </div>
                 <div className='text-center'>
-                  <Button className='w-30 bg-black rounded-sm langugP2 mb-1' onClick={() => handleBuyNow(items)}>Buy Now</Button>
+                  <Button className='w-30 bg-black rounded-sm langugP2 mb-1 ctgbtn' onClick={() => handleBuyNow(items)}>Buy Now</Button>
                 </div>
               </Card>
             ))

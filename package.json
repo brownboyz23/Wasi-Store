@@ -4,8 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "set NEXT_DISABLE_TURBOPACK=1 && next dev",
-    "build": "next build",
-    "start": "next start",
+    "build": "NODE_OPTIONS='--max-old-space-size=4096' next build",
     "lint": "eslint"
   },
   "dependencies": {

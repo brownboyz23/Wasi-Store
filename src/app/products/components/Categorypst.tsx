@@ -92,7 +92,7 @@ const Categorypst = ({ selectItem }: comp) => {
 
     return (
         <div>
-            <div className="container">
+            <div className='flex  justify-center items-center mt-25 overflow-hidden'>
                 <div className='py-0'>
                     {products && ((
                         <div className='w-full min-h-full  CardXrp '>

@@ -104,7 +104,7 @@ const Categorypst = ({ selectItem }: comp) => {
                                         style={{ objectFit: "fill" }}
                                         className='w-full h-full crdimg'
                                     />
-                                    <CardHeader className='text-center langugP7'>
+                                    <CardHeader className='text-center langugP7 crdrsp'>
                                         <CardTitle className=' line-clamp-1 fontsgs'>
                                             <h1 className='mb-2'> {items.name} </h1>
                                         </CardTitle>

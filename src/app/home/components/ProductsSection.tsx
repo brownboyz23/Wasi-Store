@@ -85,7 +85,7 @@ const ProductsSection = () => {
                                             src={items.image}
                                             alt=''
                                             style={{ objectFit: "fill" }}
-                                            className='w-full h-[170px]  '
+                                            className='crdimg'
                                         />
                                         <CardHeader className='text-center langugP7   h-[150px] '>
                                             <CardTitle className=' line-clamp-1 fontsgs'>

@@ -102,7 +102,7 @@ const Categorypst = ({ selectItem }: comp) => {
                                         src={items.image}
                                         alt=''
                                         style={{ objectFit: "fill" }}
-                                        className='w-full h-full'
+                                        className='w-full h-full crdimg'
                                     />
                                     <CardHeader className='text-center langugP7'>
                                         <CardTitle className=' line-clamp-1 fontsgs'>
@@ -120,7 +120,7 @@ const Categorypst = ({ selectItem }: comp) => {
                                         <FaStar className='text-yellow-500' />
                                         <FaStar />
                                     </div>
-                                    <div className='w-full text-center' onClick={() => handleBuyNow(items)}>
+                                    <div className='w-full text-center crdstr' onClick={() => handleBuyNow(items)}>
                                         <Button className='w-30 bg-black ctgbtn rounded-sm langugP2 mb-1'>Buy Now</Button>
                                     </div>
                                 </Card>

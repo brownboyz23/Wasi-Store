@@ -181,6 +181,7 @@
         border-radius: 3px;
     }
 
+
     .proheading {
         font-size: 20px;
         font-weight: 600;
@@ -195,18 +196,28 @@
 
 
     .fontsgs {
-        font-size: 10px;
+        font-size: 11px;
         font-weight: 400;
     }
 
     .fontPric {
-        font-size: 10px;
+        font-size: 11px;
         font-weight: 400;
     }
 
     .fontDesc {
         font-size: 9px;
         font-weight: 400;
+    }
+
+    .crdstr {
+        font-size: 8px;
+    }
+
+    .crdimg {
+        width: 100%;
+        height: 120px;
+        object-fit: fill;
     }
 
 

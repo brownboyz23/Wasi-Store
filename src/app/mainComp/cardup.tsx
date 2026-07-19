@@ -4,7 +4,7 @@ import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from '@/comp
 import { db } from '@/lib/firebase'
 import { addDoc, collection } from 'firebase/firestore'
 import { useRouter } from 'next/navigation'
-import { FaMinus, FaStar } from 'react-icons/fa6'
+import { FaStar } from 'react-icons/fa6'
 import '../mainCss/upcrd.css'
 
 interface Comp {

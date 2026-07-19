@@ -920,7 +920,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        padding: 10px;
+        padding: 5px;
     }
 
     .chosepros {
@@ -942,7 +942,10 @@
 
     .choseproxs {
         width: 30px;
+        height: 20px;
     }
+
+    .choseNam {}
 
     .MAinNam {
         font-size: 17px;

@@ -96,7 +96,7 @@ const ProductsSection = () => {
                                                 <h1 > {items.desc} </h1>
                                             </CardDescription>
                                         </CardHeader>
-                                        <div className='flex justify-center gap-2 '>
+                                        <div className='flex justify-center gap-2 crdstr '>
                                             <FaStar className='text-yellow-500' />
                                             <FaStar className='text-yellow-500' />
                                             <FaStar className='text-yellow-500' />

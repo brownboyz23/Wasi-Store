@@ -22,7 +22,7 @@ const ChoosePage = () => {
                         <Card key={idx} className='p-4 bg-white w-[12rem] h-[8rem] chosepros'>
                             <CardHeader className='flex flex-col justify-center items-center'>
                                 <FontAwesomeIcon icon={card.icon} className='text-blue-500 w-27 h-12 choseproxs' />
-                                <CardTitle className='text-center mt-4 langugP4 '>
+                                <CardTitle className='text-center mt-4 langugP4  choseNam'>
                                     {card.title}
                                 </CardTitle>
                             </CardHeader>

@@ -1,6 +1,11 @@
 import { initializeApp, getApps, getApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
-import { getFirestore, initializeFirestore, persistentLocalCache, persistentMultipleTabManager } from "firebase/firestore";
+import {
+  initializeFirestore,
+  persistentLocalCache,
+  persistentMultipleTabManager,
+  getFirestore
+} from "firebase/firestore";
 import { getAnalytics, isSupported } from "firebase/analytics";
 
 const firebaseConfig = {
@@ -13,37 +18,20 @@ const firebaseConfig = {
   measurementId: "G-NFVKXQQLVF"
 };
 
-// Next.js app initialization (Safe mode)
+// Next.js app initialization
 const app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApp();
-
-
 
 export const auth = getAuth(app);
 
-// Legacy and Modern Compatible Firestore Configuration
-// Is hisse ko hata kar neeche wala dynamic logic paste kar dein
-let firestoreDb;
+// ⚡ Back to Fast WebSockets + Smart Cache (Tested & Reliable)
+export const db = typeof window !== "undefined"
+  ? initializeFirestore(app, {
+    localCache: persistentLocalCache({
+      tabManager: persistentMultipleTabManager()
+    })
+  })
+  : getFirestore(app);
 
-if (typeof window !== "undefined") {
-  try {
-    // 1. Naye devices aur modern browsers ke liye fast local cache
-    firestoreDb = initializeFirestore(app, {
-      localCache: persistentLocalCache({
-        tabManager: persistentMultipleTabManager()
-      })
-    });
-  } catch (e) {
-    // 2. Agar iPhone 7 Plus ya koi bhi purana browser error de, to crash hone ke bajaye yeh safe fallback chalega
-    firestoreDb = initializeFirestore(app, {
-      experimentalForceLongPolling: true,
-      ignoreUndefinedProperties: true
-    });
-  }
-} else {
-  firestoreDb = getFirestore(app);
-}
-
-export const db = firestoreDb;
 export const initAnalytics = async () => {
   if (typeof window !== "undefined") {
     const supported = await isSupported();

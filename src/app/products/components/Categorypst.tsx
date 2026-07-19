@@ -113,14 +113,14 @@ const Categorypst = ({ selectItem }: comp) => {
                                             <h1> {items.desc} </h1>
                                         </CardDescription>
                                     </CardHeader>
-                                    <div className='flex justify-center gap-2 '>
+                                    <div className='flex justify-center gap-2 crdstr '>
                                         <FaStar className='text-yellow-500' />
                                         <FaStar className='text-yellow-500' />
                                         <FaStar className='text-yellow-500' />
                                         <FaStar className='text-yellow-500' />
                                         <FaStar />
                                     </div>
-                                    <div className='w-full text-center crdstr' onClick={() => handleBuyNow(items)}>
+                                    <div className='w-full text-center ' onClick={() => handleBuyNow(items)}>
                                         <Button className='w-30 bg-black ctgbtn rounded-sm langugP2 mb-1'>Buy Now</Button>
                                     </div>
                                 </Card>

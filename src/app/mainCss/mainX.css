@@ -157,7 +157,7 @@
 
     .CardResp {
         width: 140px;
-        height: 300px;
+        height: 320px;
         box-shadow: white;
         border: 1px solid rgba(128, 128, 128, 0.393);
         box-sizing: border-box;
@@ -179,6 +179,7 @@
         width: 65px;
         height: 18px;
         border-radius: 3px;
+        font-size: 10px;
     }
 
 
@@ -212,6 +213,7 @@
 
     .crdstr {
         font-size: 8px;
+
     }
 
     .crdimg {

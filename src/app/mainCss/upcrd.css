@@ -233,7 +233,7 @@ body {
 
     .crdupxfs {
         width: 250px;
-        height: 400px;
+        height: 430px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -250,7 +250,7 @@ body {
 
     .crdupxIm {
         width: 250px;
-        height: 150px;
+        height: 100%;
         object-fit: cover;
     }
 

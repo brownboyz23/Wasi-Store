@@ -72,7 +72,7 @@ const Storage = () => {
   })
 
   return (
-    <div className="container mt-10 min-h-screen">
+    <div className='container mt-10 min-h-screen'>
       {products && (
         <div className='w-full CardXrp'>
           {
@@ -84,11 +84,11 @@ const Storage = () => {
                   style={{ objectFit: "fill" }}
                   className='w-full h-full'
                 />
-                <CardHeader className='text-center langugP7 h-[150px] '>
+                <CardHeader className='text-center langugP7   h-[150px]'>
                   <CardTitle className=' line-clamp-1 fontsgs'>
                     <h1 className='mb-2'> {items.name} </h1>
                   </CardTitle>
-                  <h1 className="fontPric"> <span className='text-red-600'>RS</span> : {items.price}  </h1>
+                  <h1> <span className='text-red-600 fontPric'>RS</span> : {items.price}  </h1>
                   <CardDescription className='line-clamp-2 fontDesc'>
                     <h1> {items.desc} </h1>
                   </CardDescription>
@@ -109,10 +109,9 @@ const Storage = () => {
         </div>
       )
       }
-
-      <div className=" relative">
+      <div>
         {hoverProducts && (
-          <div className=" inset-0 fixed flex justify-center items-center bg-black/40 z-50  ">
+          <div className='absolute inset-0 fixed flex justify-center items-center bg-black/40 z-50'>
             <CardsUp
               ProCardzs={hoverProducts}
               closeCard={() => setHoveredProducts(null)}

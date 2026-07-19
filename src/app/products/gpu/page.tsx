@@ -46,7 +46,7 @@ const GPUSection = () => {
 
     }
     getproDucts()
-  },[])
+  }, [])
 
   const handleBuyNow = async (items: products) => {
     try {
@@ -73,23 +73,23 @@ const GPUSection = () => {
 
 
   return (
-    <div className="container mt-10 min-h-screen">
+    <div className='container mt-10 min-h-screen'>
       {products && (
-        <div className='w-full CardXrp '>
+        <div className='w-full CardXrp'>
           {
             filterd.map((items, index) => (
-              <Card key={index} className='w-[190px] h-[330px] py-0  border white shadow-lg CardResp ' onClick={() => setHoveredProducts(items)}>
+              <Card key={index} className='w-[190px] h-[330px] py-0  border white shadow-lg CardResp' onClick={() => setHoveredProducts(items)}>
                 <img
                   src={items.image}
                   alt=''
                   style={{ objectFit: "fill" }}
                   className='w-full h-full'
                 />
-                <CardHeader className='text-center langugP7   h-[150px] '>
+                <CardHeader className='text-center langugP7   h-[150px]'>
                   <CardTitle className=' line-clamp-1 fontsgs'>
                     <h1 className='mb-2'> {items.name} </h1>
                   </CardTitle>
-                  <h1 className='fontPric'> <span className='text-red-600'>RS</span> : {items.price}  </h1>
+                  <h1> <span className='text-red-600 fontPric'>RS</span> : {items.price}  </h1>
                   <CardDescription className='line-clamp-2 fontDesc'>
                     <h1> {items.desc} </h1>
                   </CardDescription>
@@ -102,14 +102,13 @@ const GPUSection = () => {
                   <FaStar />
                 </div>
                 <div className='text-center'>
-                  <Button className='w-30 bg-black rounded-sm langugP2 mb-1 ctgbtns' onClick={() => handleBuyNow(items)}>Buy Now</Button>
+                  <Button className='w-30 bg-black rounded-sm langugP2 mb-1 ctgbtn' onClick={() => handleBuyNow(items)}>Buy Now</Button>
                 </div>
               </Card>
             ))
           }
         </div>
       )
-
       }
       <div>
         {hoverProducts && (

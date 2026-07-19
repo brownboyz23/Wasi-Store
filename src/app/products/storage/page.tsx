@@ -83,7 +83,7 @@ const Storage = () => {
                     src={items.image}
                     alt=''
                     style={{ objectFit: "fill" }}
-                    className='w-full h-full crdimg'
+                    className='w-full  crdimg'
                   />
                   <CardHeader className='text-center langugP7  h-[150px]  crdHd '>
                     <CardTitle className=' line-clamp-1 fontsgs'>

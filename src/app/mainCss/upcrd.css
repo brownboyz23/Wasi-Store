@@ -224,7 +224,7 @@ body {
 
     .crdupx {
         width: 100%;
-        height: 500px;
+        height: 450px;
         display: flex;
         align-items: center;
         justify-content: start;
@@ -233,7 +233,7 @@ body {
 
     .crdupxfs {
         width: 250px;
-        height: 350px;
+        height: 400px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -256,7 +256,7 @@ body {
 
     .crdupxsm {
         width: 100%;
-        height: 100%;
+        height: 150;
         display: flex;
         flex-direction: column;
         justify-content: center;

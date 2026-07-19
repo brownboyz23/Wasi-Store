@@ -1,6 +1,6 @@
 import { initializeApp, getApps, getApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
-import { initializeFirestore } from "firebase/firestore";
+import { getFirestore, initializeFirestore, persistentLocalCache, persistentMultipleTabManager } from "firebase/firestore";
 import { getAnalytics, isSupported } from "firebase/analytics";
 
 const firebaseConfig = {
@@ -16,14 +16,34 @@ const firebaseConfig = {
 // Next.js app initialization (Safe mode)
 const app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApp();
 
+
+
 export const auth = getAuth(app);
 
 // Legacy and Modern Compatible Firestore Configuration
-export const db = initializeFirestore(app, {
-  experimentalForceLongPolling: true, // Purane iOS network drops ko roke ga
-  ignoreUndefinedProperties: true     // JS errors se bachaye ga
-});
+// Is hisse ko hata kar neeche wala dynamic logic paste kar dein
+let firestoreDb;
 
+if (typeof window !== "undefined") {
+  try {
+    // 1. Naye devices aur modern browsers ke liye fast local cache
+    firestoreDb = initializeFirestore(app, {
+      localCache: persistentLocalCache({
+        tabManager: persistentMultipleTabManager()
+      })
+    });
+  } catch (e) {
+    // 2. Agar iPhone 7 Plus ya koi bhi purana browser error de, to crash hone ke bajaye yeh safe fallback chalega
+    firestoreDb = initializeFirestore(app, {
+      experimentalForceLongPolling: true,
+      ignoreUndefinedProperties: true
+    });
+  }
+} else {
+  firestoreDb = getFirestore(app);
+}
+
+export const db = firestoreDb;
 export const initAnalytics = async () => {
   if (typeof window !== "undefined") {
     const supported = await isSupported();

@@ -1,11 +1,6 @@
 import { initializeApp, getApps, getApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
-import {
-  initializeFirestore,
-  persistentLocalCache,
-  persistentMultipleTabManager,
-  getFirestore
-} from "firebase/firestore";
+import { initializeFirestore } from "firebase/firestore";
 import { getAnalytics, isSupported } from "firebase/analytics";
 
 const firebaseConfig = {
@@ -18,19 +13,16 @@ const firebaseConfig = {
   measurementId: "G-NFVKXQQLVF"
 };
 
-// Next.js app initialization
+// Next.js app initialization (Safe mode)
 const app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApp();
 
 export const auth = getAuth(app);
 
-// ⚡ Back to Fast WebSockets + Smart Cache (Tested & Reliable)
-export const db = typeof window !== "undefined"
-  ? initializeFirestore(app, {
-    localCache: persistentLocalCache({
-      tabManager: persistentMultipleTabManager()
-    })
-  })
-  : getFirestore(app);
+// Legacy and Modern Compatible Firestore Configuration
+export const db = initializeFirestore(app, {
+  experimentalForceLongPolling: true, // Purane iOS network drops ko roke ga
+  ignoreUndefinedProperties: true     // JS errors se bachaye ga
+});
 
 export const initAnalytics = async () => {
   if (typeof window !== "undefined") {

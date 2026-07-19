@@ -85,7 +85,7 @@ const Storage = () => {
                     style={{ objectFit: "fill" }}
                     className='w-full h-full crdimg'
                   />
-                  <CardHeader className='text-center langugP7   h-[150px] '>
+                  <CardHeader className='text-center langugP7  h-[150px]  crdHd '>
                     <CardTitle className=' line-clamp-1 fontsgs'>
                       <h1 className=''> {items.name} </h1>
                     </CardTitle>

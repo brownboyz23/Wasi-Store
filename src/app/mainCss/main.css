@@ -71,6 +71,14 @@
         gap: 1vw;
     }
 
+    .crdHd {
+        width: 100%;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
 
     .chosProx {
         width: 100%;

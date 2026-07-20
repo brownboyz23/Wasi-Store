@@ -73,10 +73,10 @@ const CPUSection = () => {
   return (
 
     <div className='container relative mx-none'>
-      <div className='flex  justify-center items-center mt-25 overflow-hidden'>
-        <div className='py-0'>
+      <div className='flex  justify-center items-center mt-25 '>
+        <div className='py-0 w-full min-h-screen'>
           {product && ((
-            <div className='w-full min-h-screen   CardXrp '>
+            <div className='CardXrp'>
               {
                 filterd.map((items, index) => (
                   <Card key={index} className='w-[200px] min-h-full py-0  border white shadow-lg CardResp' onClick={() => setHoveredProduct(items)}>

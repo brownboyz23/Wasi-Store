@@ -68,7 +68,7 @@
     .CardXrp {
         display: grid;
         grid-template-columns: repeat(5, minmax(0, 1fr));
-        gap: 3vw;
+        gap: 2vw;
     }
 
     .CardResp {

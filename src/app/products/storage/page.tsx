@@ -90,7 +90,7 @@ const Storage = () => {
                       <CardTitle className=' line-clamp-1 fontsgs'>
                         <h1 className=''> {items.name} </h1>
                       </CardTitle>
-                      <h1 className='mt-1 fontPric'> <span className='text-red-600'>RS</span> : {items.price}  </h1>
+                      <h1 className=' fontPric'> <span className='text-red-600'>RS</span> : {items.price}  </h1>
                       <CardDescription className='line-clamp-2  fontDesc'>
                         <h1 > {items.desc} </h1>
                       </CardDescription>

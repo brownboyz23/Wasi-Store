@@ -103,7 +103,7 @@ const Categorypst = ({ selectItem }: comp) => {
                                             src={items.image}
                                             alt=''
                                             style={{ objectFit: "fill" }}
-                                            className='w-full h-full crdimg'
+                                            className='w-full crdimg'
                                         />
                                         <CardHeader className='text-center langugP7 crdHd  h-[150px] '>
                                             <CardTitle className=' line-clamp-1 fontsgs'>

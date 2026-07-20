@@ -94,17 +94,17 @@ const Storage = () => {
                       <CardDescription className='line-clamp-2  fontDesc'>
                         <h1 > {items.desc} </h1>
                       </CardDescription>
+                      <div className='flex justify-center gap-2 crdstr '>
+                        <FaStar className='text-yellow-500' />
+                        <FaStar className='text-yellow-500' />
+                        <FaStar className='text-yellow-500' />
+                        <FaStar className='text-yellow-500' />
+                        <FaStar />
+                      </div>
+                      <div className='text-center' >
+                        <Button className='w-30 bg-black rounded-sm langugP2 mb-1 ctgbtn' onClick={() => handleBuyNow(items)}>Buy Now</Button>
+                      </div>
                     </CardHeader>
-                    <div className='flex justify-center gap-2 crdstr '>
-                      <FaStar className='text-yellow-500' />
-                      <FaStar className='text-yellow-500' />
-                      <FaStar className='text-yellow-500' />
-                      <FaStar className='text-yellow-500' />
-                      <FaStar />
-                    </div>
-                    <div className='text-center' >
-                      <Button className='w-30 bg-black rounded-sm langugP2 mb-1 ctgbtn' onClick={() => handleBuyNow(items)}>Buy Now</Button>
-                    </div>
                   </Card>
                 ))
               }

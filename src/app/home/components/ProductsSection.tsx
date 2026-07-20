@@ -87,7 +87,7 @@ const ProductsSection = () => {
                                             style={{ objectFit: "fill" }}
                                             className='w-full  crdimg'
                                         />
-                                        <CardHeader className='text-center langugP7   h-[150px] '>
+                                        <CardHeader className='text-center langugP7 crdHd  h-[150px] '>
                                             <CardTitle className=' line-clamp-1 fontsgs'>
                                                 <h1 className=''> {items.name} </h1>
                                             </CardTitle>
@@ -95,17 +95,17 @@ const ProductsSection = () => {
                                             <CardDescription className='line-clamp-2  fontDesc'>
                                                 <h1 > {items.desc} </h1>
                                             </CardDescription>
+                                            <div className='flex justify-center gap-2 crdstr '>
+                                                <FaStar className='text-yellow-500' />
+                                                <FaStar className='text-yellow-500' />
+                                                <FaStar className='text-yellow-500' />
+                                                <FaStar className='text-yellow-500' />
+                                                <FaStar />
+                                            </div>
+                                            <div className='text-center' >
+                                                <Button className='w-30 bg-black rounded-sm langugP2 mb-1 ctgbtn' onClick={() => handleBuyNow(items)}>Buy Now</Button>
+                                            </div>
                                         </CardHeader>
-                                        <div className='flex justify-center gap-2 crdstr '>
-                                            <FaStar className='text-yellow-500' />
-                                            <FaStar className='text-yellow-500' />
-                                            <FaStar className='text-yellow-500' />
-                                            <FaStar className='text-yellow-500' />
-                                            <FaStar />
-                                        </div>
-                                        <div className='text-center' >
-                                            <Button className='w-30 bg-black rounded-sm langugP2 mb-1 ctgbtn' onClick={() => handleBuyNow(items)}>Buy Now</Button>
-                                        </div>
                                     </Card>
                                 ))
                             }

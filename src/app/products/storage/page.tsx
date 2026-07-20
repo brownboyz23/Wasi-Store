@@ -78,7 +78,7 @@ const Storage = () => {
           <div className='w-full min-h-full  CardXrp '>
             {
               filterd.map((items, index) => (
-                <Card key={index} className='w-[200px] h-[330px] py-0  border white shadow-lg CardResp' onClick={() => setHoveredProducts(items)}>
+                <Card key={index} className='w-[200px] min-h-screen py-0  border white shadow-lg CardResp' onClick={() => setHoveredProducts(items)}>
                   <img
                     src={items.image}
                     alt=''

@@ -77,12 +77,12 @@ const CPUSection = () => {
         <div className='w-full CardXrp'>
           {
             filterd.map((items, index) => (
-              <Card key={index} className='w-[190px] h-[330px] py-0  border white shadow-lg CardResp' onClick={() => setHoveredProduct(items)}>
+              <Card key={index} className='w-[190px] min-h-screen py-0  border white shadow-lg CardResp' onClick={() => setHoveredProduct(items)}>
                 <img
                   src={items.image}
                   alt=''
                   style={{ objectFit: "fill" }}
-                  className='w-full crdimg'
+                  className='w-full  crdimg'
                 />
                 <CardHeader className='text-center langugP7   h-[150px]'>
                   <CardTitle className=' line-clamp-1 fontsgs'>

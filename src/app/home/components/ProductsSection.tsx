@@ -80,7 +80,7 @@ const ProductsSection = () => {
                         <div className='w-full min-h-full  CardXrp '>
                             {
                                 filtered.map((items, index) => (
-                                    <Card key={index} className='w-[200px] min-h-screen py-0  border white shadow-lg CardResp' onClick={() => setHoveredProduct(items)}>
+                                    <Card key={index} className='w-[200px] min-h-full py-0  border white shadow-lg CardResp' onClick={() => setHoveredProduct(items)}>
                                         <img
                                             src={items.image}
                                             alt=''

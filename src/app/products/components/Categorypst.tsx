@@ -95,7 +95,7 @@ const Categorypst = ({ selectItem }: comp) => {
             <div className='flex  justify-center items-center mt-25 overflow-hidden'>
                 <div className='py-0'>
                     {products && ((
-                        <div className='w-full min-h-full  CardXrp '>
+                        <div className='w-full min-h-screen  CardXrp '>
                             {
                                 filterd.map((items, index) => (
                                     <Card key={index} className='w-[200px] min-h-full py-0  border white shadow-lg CardResp' onClick={() => setHoveredProducts(items)}>

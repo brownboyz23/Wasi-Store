@@ -73,57 +73,59 @@ const GPUSection = () => {
 
 
   return (
-    <div className='flex  justify-center items-center mt-25 overflow-hidden'>
-      <div className='py-0'>
-        {products && ((
-          <div className='w-full min-h-full  CardXrp '>
-            {
-              filterd.map((items, index) => (
-                <Card key={index} className='w-[200px] min-h-screen py-0  border white shadow-lg CardResp' onClick={() => setHoveredProducts(items)}>
-                  <img
-                    src={items.image}
-                    alt=''
-                    style={{ objectFit: "fill" }}
-                    className='w-full  crdimg'
-                  />
-                  <CardHeader className='text-center langugP7   h-[150px] crdHd '>
-                    <CardTitle className=' line-clamp-1 fontsgs'>
-                      <h1 className=''> {items.name} </h1>
-                    </CardTitle>
-                    <h1 className='mt-1 fontPric'> <span className='text-red-600'>RS</span> : {items.price}  </h1>
-                    <CardDescription className='line-clamp-2  fontDesc'>
-                      <h1 > {items.desc} </h1>
-                    </CardDescription>
-                  </CardHeader>
-                  <div className='flex justify-center gap-2 crdstr '>
-                    <FaStar className='text-yellow-500' />
-                    <FaStar className='text-yellow-500' />
-                    <FaStar className='text-yellow-500' />
-                    <FaStar className='text-yellow-500' />
-                    <FaStar />
-                  </div>
-                  <div className='text-center' >
-                    <Button className='w-30 bg-black rounded-sm langugP2 mb-1 ctgbtn' onClick={() => handleBuyNow(items)}>Buy Now</Button>
-                  </div>
-                </Card>
-              ))
-            }
-          </div>
-        ))
+    <div className='container relative mx-none'>
+      <div className='flex  justify-center items-center mt-25 overflow-hidden'>
+        <div className='py-0'>
+          {products && ((
+            <div className='w-full min-h-full  CardXrp '>
+              {
+                filterd.map((items, index) => (
+                  <Card key={index} className='w-[200px] min-h-screen py-0  border white shadow-lg CardResp' onClick={() => setHoveredProducts(items)}>
+                    <img
+                      src={items.image}
+                      alt=''
+                      style={{ objectFit: "fill" }}
+                      className='w-full  crdimg'
+                    />
+                    <CardHeader className='text-center langugP7   h-[150px] '>
+                      <CardTitle className=' line-clamp-1 fontsgs'>
+                        <h1 className=''> {items.name} </h1>
+                      </CardTitle>
+                      <h1 className='mt-1 fontPric'> <span className='text-red-600'>RS</span> : {items.price}  </h1>
+                      <CardDescription className='line-clamp-2  fontDesc'>
+                        <h1 > {items.desc} </h1>
+                      </CardDescription>
+                    </CardHeader>
+                    <div className='flex justify-center gap-2 crdstr '>
+                      <FaStar className='text-yellow-500' />
+                      <FaStar className='text-yellow-500' />
+                      <FaStar className='text-yellow-500' />
+                      <FaStar className='text-yellow-500' />
+                      <FaStar />
+                    </div>
+                    <div className='text-center' >
+                      <Button className='w-30 bg-black rounded-sm langugP2 mb-1 ctgbtn' onClick={() => handleBuyNow(items)}>Buy Now</Button>
+                    </div>
+                  </Card>
+                ))
+              }
+            </div>
+          ))
 
-        }
-      </div>
-      <div>
-        {hoverProducts && (
-          <div className="absolute inset-0 fixed flex justify-center items-center  bg-black/40 z-50 ">
+          }
+        </div>
+        <div>
+          {hoverProducts && (
+            <div className="absolute inset-0 fixed flex justify-center items-center  bg-black/40 z-50 ">
 
-            <CardsUp
-              ProCardzs={hoverProducts}
+              <CardsUp
+                ProCardzs={hoverProducts}
 
-              closeCard={() => setHoveredProducts(null)}
-            />
-          </div>
-        )}
+                closeCard={() => setHoveredProducts(null)}
+              />
+            </div>
+          )}
+        </div>
       </div>
     </div>
   )

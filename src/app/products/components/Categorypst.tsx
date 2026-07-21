@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import { useEffect, useState } from "react"
-import { addDoc, collection, doc, getDocs } from "firebase/firestore"
+import { addDoc, collection, getDocs } from "firebase/firestore"
 import { db } from "@/lib/firebase"
 import { Card, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { FaStar } from 'react-icons/fa6'
@@ -96,7 +96,7 @@ const Categorypst = ({ selectItem }: comp) => {
             <div className='flex  justify-center items-center mt-25 overflow-hidden'>
                 <div className='py-0'>
                     {products && ((
-                        <div className='w-full CardXrp '>
+                        <div className=' w-full CardXrp'>
                             {
                                 filterd.map((items, index) => (
                                     <Card key={index} className='w-[200px] min-h-[320px] py-0  border white shadow-lg CardResp' onClick={() => setHoveredProducts(items)}>
@@ -104,7 +104,7 @@ const Categorypst = ({ selectItem }: comp) => {
                                             src={items.image}
                                             alt=''
                                             style={{ objectFit: "fill" }}
-                                            className='w-full crdimg'
+                                            className='w-full  crdimg'
                                         />
                                         <CardHeader className='text-center langugP7 crdHd  h-[150px] '>
                                             <CardTitle className=' line-clamp-1 fontsgs'>

@@ -7,7 +7,7 @@ import { Card, CardDescription, CardHeader, CardTitle } from '@/components/ui/ca
 import { FaStar } from 'react-icons/fa6'
 import { Button } from '@/components/ui/button'
 import CardsUp from '@/app/mainComp/cardup'
-// import '../../mainCss/mainX.css'
+import '../../mainCss/mainX.css'
 import '../../mainCss/main.css'
 import { useRouter } from 'next/navigation'
 

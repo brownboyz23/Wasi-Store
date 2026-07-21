@@ -72,11 +72,11 @@ const Storage = () => {
   })
 
   return (
-    <div className='container relative mx-none  '>
+    <div className='container relative mx-none'>
       <div className='flex  justify-center items-center mt-25 '>
         <div className='py-0  border-2 '>
           {products && ((
-            <div className=' w-full min-h-screen CardXrp '>
+            <div className=' w-full min-h-screen mb-15 CardXrp '>
               {
                 filterd.map((items, index) => (
                   <Card key={index} className='w-[200px] min-h-[320px] py-0  border white shadow-lg CardResp' onClick={() => setHoveredProducts(items)}>

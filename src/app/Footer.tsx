@@ -7,7 +7,7 @@ const FooterPage = () => {
         <div>
             <div className=' mt-20 '>
                 <div className=' w-full min-h-screen  py-10 flex justify-around items-center text-center  bg-black text-white '>
-                    <div className='flex flex-col leading-relaxed gap-9 ftrH'>
+                    <div className='min-h-full flex flex-col leading-relaxed gap-9 ftrH'>
                         <div>
                             <Link href={"/"} className=' langugP5 '>
                                 <h1>Wasi-Store</h1>

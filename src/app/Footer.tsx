@@ -6,7 +6,7 @@ const FooterPage = () => {
     return (
         <div>
             <div className=' mt-20 '>
-                <div className=' w-full min-h-screen  flex justify-around items-center text-center  bg-black text-white '>
+                <div className=' w-full min-h-full  flex justify-around items-center text-center  bg-black text-white '>
                     <div className='flex flex-col leading-relaxed gap-9 ftrH'>
                         <div>
                             <Link href={"/"} className=' langugP5 '>

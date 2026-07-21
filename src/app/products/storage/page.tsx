@@ -72,7 +72,7 @@ const Storage = () => {
   })
 
   return (
-    <div className='container relative mx-none min-h-screen mb-15'>
+    <div className='container relative mx-none min-h-screen '>
       <div className='flex  justify-center items-center mt-25 '>
         <div className='py-0  '>
           {products && ((

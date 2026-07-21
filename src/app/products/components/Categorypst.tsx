@@ -7,7 +7,7 @@ import { Card, CardDescription, CardHeader, CardTitle } from '@/components/ui/ca
 import { FaStar } from 'react-icons/fa6'
 import { Button } from '@/components/ui/button'
 import CardsUp from '@/app/mainComp/cardup'
-import '../../mainCss/mainX.css'
+// import '../../mainCss/mainX.css'
 import '../../mainCss/main.css'
 import { useRouter } from 'next/navigation'
 
@@ -92,8 +92,8 @@ const Categorypst = ({ selectItem }: comp) => {
 
 
     return (
-        <div>
-            <div className='flex  justify-center items-center mt-25 overflow-hidden'>
+        <div className='container relative mx-none'>
+            <div className='flex  justify-center items-center mt-25 '>
                 <div className='py-0'>
                     {products && ((
                         <div className=' w-full CardXrp'>

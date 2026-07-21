@@ -72,7 +72,7 @@ const CPUSection = () => {
 
   return (
 
-    <div className='container relative mx-none'>
+    <div className='container relative mx-none min-h-screen'>
       <div className='flex  justify-center items-center mt-25 '>
         <div className='py-0  '>
           {product && ((

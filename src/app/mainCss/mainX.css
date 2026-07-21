@@ -7,7 +7,7 @@
     }
 
     .CardResp {
-        width: 250px;
+        width: 230px;
         height: 400px;
         box-shadow: white;
         border: 1px solid rgba(128, 128, 128, 0.393);
@@ -54,7 +54,7 @@
     .CardXrp {
         display: grid;
         grid-template-columns: repeat(4, minmax(0, 1fr));
-        gap: 5vw;
+        gap: 4vw;
     }
 
     .pxde {

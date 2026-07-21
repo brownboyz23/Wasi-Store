@@ -74,7 +74,7 @@ const Storage = () => {
   return (
     <div className='container relative mx-none  '>
       <div className='flex  justify-center items-center mt-25 '>
-        <div className='py-0 min-h-screen border-2 '>
+        <div className='py-0  min-h-full '>
           {products && ((
             <div className=' w-full  CardXrp '>
               {

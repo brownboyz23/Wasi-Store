@@ -773,7 +773,6 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        padding: 10px;
     }
 
     .chosepros {
@@ -781,7 +780,6 @@
         height: 80px;
         font-weight: 400;
         font-size: 10px;
-        padding: 3px;
     }
 
     .choseNam {
@@ -807,6 +805,8 @@
     .choseproxs {
         width: 30px;
         height: 20px;
+        margin: 0px;
+        padding: 0px;
     }
 
     .MAinNam {
@@ -1010,7 +1010,6 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        padding: 5px;
     }
 
     .chosepros {
@@ -1018,7 +1017,6 @@
         height: 80px;
         font-size: 10px;
         font-weight: 400;
-        padding: 3px;
     }
 
 

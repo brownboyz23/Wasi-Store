@@ -251,8 +251,8 @@
         width: 70px;
         height: 30px;
         position: absolute;
-        bottom: 30;
-        left: 30;
+        bottom: 20;
+        left: 18vw;
         z-index: 90;
 
     }
@@ -404,8 +404,8 @@
         width: 70px;
         height: 30px;
         position: absolute;
-        bottom: 30;
-        left: 30;
+        bottom: 20;
+        left: 16vw;
         z-index: 90;
 
     }
@@ -795,8 +795,8 @@
         width: 70px;
         height: 30px;
         position: absolute;
-        bottom: 30;
-        left: 30;
+        bottom: 20;
+        right: 20vw;
         z-index: 90;
 
     }
@@ -1026,8 +1026,8 @@
         width: 70px;
         height: 30px;
         position: absolute;
-        top: -20;
-        right: 30;
+        top: 25;
+        left: 10;
         z-index: 90;
 
     }

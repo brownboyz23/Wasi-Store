@@ -121,7 +121,6 @@
         bottom: 30;
         left: 30;
         z-index: 90;
-
     }
 
     .mosizDro {
@@ -251,7 +250,11 @@
     .slidbtn {
         width: 70px;
         height: 30px;
-        margin-left: 5vw;
+        position: absolute;
+        bottom: 30;
+        left: 30;
+        z-index: 90;
+
     }
 
     .mosizDro {
@@ -400,7 +403,11 @@
     .slidbtn {
         width: 70px;
         height: 30px;
-        margin-left: 7vw;
+        position: absolute;
+        bottom: 30;
+        left: 30;
+        z-index: 90;
+
     }
 
     .ctgbtn {
@@ -587,7 +594,11 @@
     .slidbtn {
         width: 70px;
         height: 30px;
-        margin-left: 12vw;
+        position: absolute;
+        bottom: 30;
+        left: 30;
+        z-index: 90;
+
     }
 
 
@@ -781,7 +792,13 @@
     }
 
     .slidbtn {
-        margin-left: 25px;
+        width: 70px;
+        height: 30px;
+        position: absolute;
+        bottom: 30;
+        left: 30;
+        z-index: 90;
+
     }
 
     .choseproxs {
@@ -1006,7 +1023,13 @@
     }
 
     .slidbtn {
-        margin-left: 25px;
+        width: 70px;
+        height: 30px;
+        position: absolute;
+        bottom: 30;
+        left: 30;
+        z-index: 90;
+
     }
 
     .choseproxs {

@@ -43,7 +43,7 @@ const SliderPage = () => {
       }
     }
     addpProducts()
-  },[])
+  }, [])
 
 
 
@@ -84,7 +84,7 @@ const SliderPage = () => {
         {products && (
           <div className=''>
             {filtered.map((items, index) => (
-              <SwiperSlide key={index} className=' basis-1/4  '>
+              <SwiperSlide key={index} className=' basis-1/4 relative '>
                 <div className='relative  h-[200px] slidProx'>
                   <img
                     src={items.image}

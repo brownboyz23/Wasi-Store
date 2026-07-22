@@ -590,16 +590,14 @@
         font-weight: 600;
     }
 
-    /* 
     .slidbtn {
         width: 70px;
         height: 30px;
         position: absolute;
-        bottom: 30;
-        left: 30;
+        bottom: 10px;
+        left: 15px;
         z-index: 90;
-
-    } */
+    }
 
 
     /* ////// Footer */
@@ -795,11 +793,11 @@
         width: 70px;
         height: 30px;
         position: absolute;
-        top: -20;
-        right: 10;
+        bottom: 10px;
+        left: 15px;
         z-index: 90;
-
     }
+
 
     .choseproxs {
         width: 30px;

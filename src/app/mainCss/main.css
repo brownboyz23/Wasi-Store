@@ -118,6 +118,7 @@
         width: 70px;
         height: 30px;
         position: absolute;
+        position: fixed;
         bottom: 20;
         right: 30;
         z-index: 90;
@@ -246,7 +247,7 @@
         justify-content: space-around;
         align-items: center;
     }
-
+/* 
     .slidbtn {
         width: 70px;
         height: 30px;
@@ -255,7 +256,7 @@
         left: 18vw;
         z-index: 90;
 
-    }
+    } */
 
     .mosizDro {
         display: none;
@@ -400,7 +401,7 @@
         font-family: "Bricolage Grotesque", sans-serif;
     }
 
-    .slidbtn {
+    /* .slidbtn {
         width: 70px;
         height: 30px;
         position: absolute;
@@ -408,7 +409,7 @@
         left: 16vw;
         z-index: 90;
 
-    }
+    } */
 
     .ctgbtn {
         width: 90px;
@@ -590,7 +591,7 @@
         font-size: 20px;
         font-weight: 600;
     }
-
+/* 
     .slidbtn {
         width: 70px;
         height: 30px;
@@ -599,7 +600,7 @@
         left: 30;
         z-index: 90;
 
-    }
+    } */
 
 
     /* ////// Footer */
@@ -791,7 +792,7 @@
         height: 200px;
     }
 
-    .slidbtn {
+    /* .slidbtn {
         width: 70px;
         height: 30px;
         position: absolute;
@@ -799,7 +800,7 @@
         right: 20vw;
         z-index: 90;
 
-    }
+    } */
 
     .choseproxs {
         width: 30px;

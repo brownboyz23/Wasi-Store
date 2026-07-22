@@ -119,7 +119,7 @@
         height: 30px;
         margin-left: 4vw;
         position: absolute;
-        top: 30;
+        top: -30;
         z-index: 50;
     }
 

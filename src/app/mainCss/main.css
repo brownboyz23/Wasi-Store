@@ -120,7 +120,7 @@
         margin-left: 4vw;
         position: absolute;
         top: -30;
-        z-index: 50;
+        z-index: 90;
     }
 
     .mosizDro {
@@ -1012,8 +1012,6 @@
         width: 30px;
         height: 20px;
     }
-
-    .choseNam {}
 
     .MAinNam {
         font-size: 17px;

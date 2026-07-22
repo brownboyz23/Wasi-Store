@@ -97,7 +97,7 @@ const SliderPage = () => {
                   <div className='hidden'>
                     {items.desc}
                   </div>
-                  <div className='w-full relative slidproxs  border-2 '>
+                  <div className='w-full relative slidproxs'>
                     <Button className='border-1 slidbtn ' onClick={() => HandleBuyNow(items)}>
                       Buy Now
                     </Button>

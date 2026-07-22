@@ -247,7 +247,8 @@
         justify-content: space-around;
         align-items: center;
     }
-/* 
+
+    /* 
     .slidbtn {
         width: 70px;
         height: 30px;
@@ -591,7 +592,8 @@
         font-size: 20px;
         font-weight: 600;
     }
-/* 
+
+    /* 
     .slidbtn {
         width: 70px;
         height: 30px;
@@ -792,15 +794,15 @@
         height: 200px;
     }
 
-    /* .slidbtn {
+    .slidbtn {
         width: 70px;
         height: 30px;
         position: absolute;
-        bottom: 20;
-        right: 20vw;
+        top: -20;
+        right: 10;
         z-index: 90;
 
-    } */
+    }
 
     .choseproxs {
         width: 30px;
@@ -1027,7 +1029,7 @@
         width: 70px;
         height: 30px;
         position: absolute;
-        top: 5;
+        top: -20;
         right: 10;
         z-index: 90;
 

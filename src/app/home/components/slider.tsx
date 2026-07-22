@@ -84,7 +84,7 @@ const SliderPage = () => {
         {products && (
           <div className=''>
             {filtered.map((items, index) => (
-              <SwiperSlide key={index} className=' basis-1/4 relative '>
+              <SwiperSlide key={index} className=' basis-1/4  '>
                 <div className='relative  h-[200px] slidProx'>
                   <img
                     src={items.image}
@@ -97,7 +97,7 @@ const SliderPage = () => {
                   <div className='hidden'>
                     {items.desc}
                   </div>
-                  <div className='w-full absolute slidproxs  border-2 '>
+                  <div className='w-full relative slidproxs  border-2 '>
                     <Button className='border-1 slidbtn ' onClick={() => HandleBuyNow(items)}>
                       Buy Now
                     </Button>

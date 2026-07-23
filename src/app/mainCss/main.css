@@ -627,7 +627,7 @@
 
 }
 
-@media screen and (min-width:320px) and (max-width:479px) {
+@media screen and (min-width:300px) and (max-width:479px) {
 
     .mosizDro {
         width: 35px;
@@ -709,19 +709,16 @@
         z-index: 99;
     }
 
+
+    /* propducts cards */
     .CardResp {
         width: 140px;
-        height: 300px;
+        height: 320px;
         box-shadow: white;
         border: 1px solid rgba(128, 128, 128, 0.393);
         box-sizing: border-box;
         padding: 0px;
         margin: 0px;
-    }
-
-    .fontsgs {
-        font-size: 10px;
-        font-weight: 400;
     }
 
     .CardXrp {
@@ -730,6 +727,56 @@
         gap: 6vw;
     }
 
+    .crdHd {
+        width: 100%;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .crdstr {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 11px;
+    }
+
+    .crdimg {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 10px;
+        box-sizing: border-box;
+    }
+
+    .proTitle {
+        font-size: 13px;
+        font-weight: 600;
+        color: rgba(182, 179, 179, 0.68);
+    }
+
+
+    .fontFNM {
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    .fontPric {
+        font-size: 11px;
+        font-weight: 400;
+    }
+
+    .fontDesc {
+        font-size: 10px;
+        font-weight: 400;
+    }
+
+    /* propducts cards */
+
+    /* feature  dIV */
 
     .fturproFX {
         width: 100%;
@@ -767,6 +814,8 @@
         /* margin-top: 5px; */
     }
 
+    /* choose sec */
+
     .chosProx {
         width: 100%;
         height: 200px;
@@ -776,16 +825,26 @@
     }
 
     .chosepros {
-        width: 80px;
+        width: 70px;
         height: 80px;
         font-weight: 400;
-        font-size: 10px;
+        padding:6px;
     }
 
     .choseNam {
-        font-size: 12px;
+        font-size: 11px;
         font-weight: 400;
     }
+
+    .choseproxs {
+        width: 30px;
+        height: 20px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    /* choose sec */
+
 
     .slidProx {
         width: 100%;
@@ -802,12 +861,7 @@
     }
 
 
-    .choseproxs {
-        width: 30px;
-        height: 20px;
-        margin: 0px;
-        padding: 0px;
-    }
+
 
     .MAinNam {
         font-size: 17px;
@@ -822,11 +876,11 @@
     }
 
     .banrName {
-        font-size: 40px;
+        font-size: 33px;
     }
 
     .redBanr {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     /* Footer */
@@ -843,9 +897,11 @@
     }
 
     .ctgbtn {
-        width: 70px;
-        height: 23px;
+        width: 65px;
+        height: 18px;
         border-radius: 3px;
+        font-size: 10px;
+        font-size: 8px;
     }
 
     .responXX {

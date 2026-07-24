@@ -8,7 +8,7 @@ import '../../mainCss/main.css'
 const BannerPage = () => {
   return (
     <div className='relative w-full'>
-      <div className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] h-[700px] mx-auto banerLinear">
+      <div className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] h-[700px] mx-auto banerLinear banresp">
         {/* Image */}
         <Image
           src={Home}

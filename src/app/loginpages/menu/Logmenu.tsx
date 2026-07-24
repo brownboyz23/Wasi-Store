@@ -127,7 +127,7 @@ export function LogMenu() {
                   {user.email?.charAt(0).toUpperCase()}
                 </div>
               ) : (
-                <FaRegCircleUser className="text-4xl flex items-center justify-center ms-1 mx-auto mt-2  " />
+                <FaRegCircleUser className="text-4xl flex items-center justify-center ms-1 mx-auto mt-2 iconres"/>
               )
               }
             </button>

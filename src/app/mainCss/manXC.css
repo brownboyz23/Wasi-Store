@@ -15,7 +15,7 @@
 
 
     .customiSel {
-        gap: 2vw;
+        gap: 4vw;
     }
 
     .fturproFX {
@@ -40,8 +40,8 @@
 
     .custodev {
         width: 360px;
-        height: 435px;
-        font-size: 10px;
+        height: 470px;
+        font-size: 15px;
         font-weight: 400;
         box-sizing: border-box;
     }
@@ -72,6 +72,12 @@
         height: 30px;
         border-radius: 5px;
         border: 1px solid;
+        font-size: 12px;
+    }
+
+    .ctgbtnxy {
+        width: 100%;
+        height: 35px;
         font-size: 13px;
     }
 }
@@ -89,7 +95,6 @@
     }
 
     .cstorproDc {
-        font-size: 18px;
         font-weight: 400;
         font-size: 21px;
         line-height: 4vw;
@@ -97,7 +102,7 @@
 
     .ctgbtn {
         width: 120px;
-        height: 30px;
+        height: 35px;
         border-radius: 5px;
     }
 
@@ -116,7 +121,7 @@
 
     .custodev {
         width: 300px;
-        height: 370px;
+        height: 400px;
         font-size: 10px;
         font-weight: 400;
         box-sizing: border-box;
@@ -124,7 +129,7 @@
 
 
     .customiSel {
-        gap: 3vw;
+        gap: 5vw;
     }
 
     .custodevIm {
@@ -147,6 +152,12 @@
         height: 30px;
         border-radius: 5px;
         border: 1px solid;
+        font-size: 13px;
+    }
+
+    .ctgbtnxy {
+        width: 100%;
+        height: 35px;
         font-size: 13px;
     }
 }
@@ -174,7 +185,7 @@
 
     .ctgbtn {
         width: 100px;
-        height: 28px;
+        height: 32px;
         border-radius: 5px;
     }
 
@@ -205,7 +216,7 @@
 
     .custodev {
         width: 300px;
-        height: 370px;
+        height: 400px;
         font-size: 10px;
         font-weight: 400;
         box-sizing: border-box;
@@ -213,7 +224,7 @@
 
 
     .customiSel {
-        gap: 4vw;
+        gap: 6vw;
     }
 
     .custodevIm {
@@ -236,9 +247,14 @@
         height: 30px;
         border-radius: 5px;
         border: 1px solid;
-        font-size: 12px;
+        font-size: 10px;
     }
 
+    .ctgbtnxy {
+        width: 100%;
+        height: 35px;
+        font-size: 12px;
+    }
 }
 
 @media screen and (min-width:480px) and (max-width:767px) {
@@ -311,7 +327,7 @@
 
     .custodev {
         width: 200px;
-        height: 250px;
+        height: 270px;
         font-size: 10px;
         font-weight: 400;
         box-sizing: border-box;
@@ -344,16 +360,6 @@
         border-radius: 5px;
         font-size: 9px;
     }
-
-    /* .cskminx {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        margin-top: 12vw;
-    } */
 
 
 }
@@ -409,12 +415,6 @@
         padding: 0px;
     }
 
-    /* .ctgbtn {
-        width: 80px;
-        height: 30px;
-        font-size: 12px;
-        border-radius: 2px;
-    } */
 
     .ctgbtnxy {
         height: 30px;
@@ -439,7 +439,7 @@
 
     .custodev {
         width: 300px;
-        height: 300px;
+        height: 330px;
         font-size: 10px;
         font-weight: 400;
         box-sizing: border-box;

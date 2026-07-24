@@ -6,8 +6,8 @@ const FooterPage = () => {
     return (
         <div>
             <div className=' mt-20 '>
-                <div className=' w-full h-[250px]  py-10 flex justify-around items-center text-center  bg-black text-white '>
-                    <div className='flex flex-col leading-relaxed gap-9 ftrH'>
+                <div className=' w-full h-[320px]   flex justify-around items-center text-center  bg-black text-white '>
+                    <div className='flex flex-col leading-relaxed gap-12 ftrH'>
                         <div>
                             <Link href={"/"} className=' langugP5 '>
                                 <h1>Wasi-Store</h1>
@@ -29,7 +29,7 @@ const FooterPage = () => {
                             </Link>
                         </div>
                     </div>
-                    <div className='flex flex-col items-center justify-center leading-relaxed gap-9 ftrH'>
+                    <div className='flex flex-col items-center justify-center leading-relaxed gap-12 ftrH'>
                         <div>
                             <Link href={"/products/gpu/"} className=' langugP5 '>
                                 <h1>GPU-z</h1>
@@ -51,7 +51,7 @@ const FooterPage = () => {
                             </Link>
                         </div>
                     </div>
-                    <div className='flex flex-col items-center justify-center leading-relaxed gap-9 ftrH'>
+                    <div className='flex flex-col items-center justify-center leading-relaxed gap-12 ftrH'>
                         <div>
                             <Link href={"/"} className=' langugP5 '>
                                 <h1>N-FANS</h1>
@@ -73,7 +73,7 @@ const FooterPage = () => {
                             </Link>
                         </div>
                     </div>
-                    <div className='flex flex-col items-center justify-center leading-relaxed gap-9 ftrH'>
+                    <div className='flex flex-col items-center justify-center leading-relaxed gap-12 ftrH'>
                         <div>
                             <Link href={"/"} className=' langugP5 '>
                                 <h1>W-Store</h1>
@@ -95,7 +95,7 @@ const FooterPage = () => {
                             </Link>
                         </div>
                     </div>
-                    <div className='flex flex-col items-center justify-center leading-relaxed gap-9 ftrH'>
+                    <div className='flex flex-col items-center justify-center leading-relaxed gap-12 ftrH'>
                         <div>
                             <Link href={"/"} className=' langugP5 '>
                                 <h1>W-Store</h1>
@@ -117,7 +117,7 @@ const FooterPage = () => {
                             </Link>
                         </div>
                     </div>
-                    <div className='flex flex-col items-center justify-center leading-relaxed gap-9 ftrH'>
+                    <div className='flex flex-col items-center justify-center leading-relaxed gap-12 ftrH'>
                         <div>
                             <Link href={"/Dashboard/"} className=' langugP5 '>
                                 <h1>DashBoard</h1>
@@ -139,7 +139,7 @@ const FooterPage = () => {
                             </Link>
                         </div>
                     </div>
-                    <div className='flex flex-col items-center justify-center leading-relaxed gap-9 ftrH'>
+                    <div className='flex flex-col items-center justify-center leading-relaxed gap-12 ftrH'>
                         <div>
                             <Link href={"/helpCenter/"} className=' langugP5 '>
                                 <h1>FOR HELP</h1>

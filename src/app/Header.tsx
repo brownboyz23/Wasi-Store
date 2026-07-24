@@ -33,26 +33,30 @@ const HeaderPAge = () => {
                                 <FaBars />
                             </Button>
                         </DropdownMenuTrigger>
-                        <DropdownMenuContent>
-                            <div className='mosizDrownUp'>
+                        <DropdownMenuContent
+                            align="center"
+                            sideOffset={0}
+                            className="w-[100vw] max-w-[479px] p-0 border-none bg-transparent shadow-none"
+                        >
+                            <div className='mosizDrownUp w-full max-w-[479px] mx-auto'>
                                 <nav className='mosizDrown'>
                                     <DropdownMenuItem asChild>
-                                        <Link href={'/'} className=' Dropname font2'>Home</Link>
+                                        <Link href={'/'} className='Dropname font2'>Home</Link>
                                     </DropdownMenuItem>
                                     <DropdownMenuItem asChild>
-                                        <Link href={'/products'} className=' Dropname fontB400 font2 '>Products</Link>
+                                        <Link href={'/products'} className='Dropname fontB400 font2'>Products</Link>
                                     </DropdownMenuItem>
                                     <DropdownMenuItem asChild>
-                                        <Link href={'/Customize'} className=' Dropname fontB400 font2 '>Customize</Link>
+                                        <Link href={'/Customize'} className='Dropname fontB400 font2'>Customize</Link>
                                     </DropdownMenuItem>
                                     <DropdownMenuItem asChild>
-                                        <Link href={'/Dashboard'} className=' Dropname fontB400 font2 '>Dashboard</Link>
+                                        <Link href={'/Dashboard'} className='Dropname fontB400 font2'>Dashboard</Link>
                                     </DropdownMenuItem>
                                     <DropdownMenuItem asChild>
-                                        <Link href={'/helpCenter'} className=' Dropname fontB400 font2 '>Help-Center</Link>
+                                        <Link href={'/helpCenter'} className='Dropname fontB400 font2'>Help-Center</Link>
                                     </DropdownMenuItem>
                                     <DropdownMenuItem asChild>
-                                        <Link href={'/Admin'} className=' Dropname fontB400 font2 ' hidden>AdminPage</Link>
+                                        <Link href={'/Admin'} className='Dropname fontB400 font2' hidden>AdminPage</Link>
                                     </DropdownMenuItem>
                                 </nav>
                             </div>
@@ -87,7 +91,7 @@ const HeaderPAge = () => {
                                 onClick={(e) => { if (!searchitem.trim()) e.preventDefault(); }}
                             >
                                 <Search id='srct'
-                                    className="w-6 h-6   text-gray-500 mr-1 btn btn-outline cursor-pointer "
+                                    className="w-6 h-6 text-gray-500 mr-1 btn btn-outline cursor-pointer "
                                 />
                             </Link>
                             {/* </Button> */}

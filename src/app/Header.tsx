@@ -24,7 +24,7 @@ const HeaderPAge = () => {
 
     return (
         <div className=''>
-            <div className='fixed w-full  top-0 left-0 z-[60] sticky  backdrop-blur'>
+            <div className='w-full fixed top-0 left-0 z-[60] backdrop-blur sticky'>
                 <div className='bg-black flex items-center justify-center p-5 h-20 text-white respono '>
                     <h1 className='fontB600 flex MAinNam font5 pl-2 moSizName'>WASI-<span className='clrbtn'>STORE</span></h1>
                     {<DropdownMenu>

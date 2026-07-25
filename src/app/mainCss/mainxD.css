@@ -205,6 +205,12 @@ body {
 
 @media screen and (min-width:320px) and (max-width:479px) {
 
+    .dshbp {
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+    }
+
     .dshbpxF {
         width: 100%;
         height: 400px;
@@ -216,7 +222,7 @@ body {
 
     .dshbpxfs {
         width: 100%;
-        height: 100%;
+        height: 350px;
         padding: 5px;
     }
 
@@ -278,11 +284,17 @@ body {
         font-size: 23px;
         font-weight: 600;
         margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     .fontsizG {
         font-size: 13px;
         font-weight: 600;
+    }
+
+    .cngp {
+        gap: 10px;
+        font-size: 12px;
     }
 
 

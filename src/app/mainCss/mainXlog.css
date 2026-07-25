@@ -1,0 +1,118 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+@media screen and (min-width:320px) and (max-width:479px) {
+
+    .cspymn {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 5px;
+    }
+
+    .cspymnxs {
+        width: 280px;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        margin-left: 20px;
+    }
+
+    .spcxsm {
+        width: 250px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+    }
+
+
+    .spcxsN {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 10px;
+        margin: 0px;
+
+    }
+
+    .pynmx {
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 20px;
+    }
+
+    .pynam {
+        font-size: 13px;
+    }
+
+    .pynms {
+        margin-right: -30px;
+    }
+
+    .pynama {
+        margin-right: 10px;
+    }
+
+
+    .spcxs {
+        width: 80px;
+        height: 30px;
+        border-radius: 5px;
+    }
+
+    .spcxsx {
+        width: 120px;
+        height: 30px;
+        border-radius: 5px;
+    }
+
+    .spcxe {
+        width: 70px;
+        height: 30px;
+        border-radius: 5px;
+    }
+
+    .spcxessx {
+        margin-right: -3px;
+    }
+
+
+    .spcxeBi {
+        width: 210px;
+        height: 30px;
+        border-radius: 5px;
+    }
+
+    .spcxsb {
+        width: 120px;
+        height: 30px;
+        border-radius: 5px;
+    }
+
+    .spcxsb:hover {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+
+    .gapremo {
+        gap: 0px;
+    }
+
+}

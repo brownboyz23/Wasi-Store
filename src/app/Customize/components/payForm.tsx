@@ -112,44 +112,48 @@ const PayForm = ({ onSuccess, }: ChildProps) => {
     return (
         <div>
             <div className='w-full h-[500px] flex  justify-center items-center cspymn'>
-                <form onSubmit={handlepayment} className='w-[350px] h-[430px] p-5 cspymnxs rounded-lg  bg-white text-black hover:bg-[#0B0F19] hover:text-white border border-gray'>
+                <form onSubmit={handlepayment} className='w-[350px] h-[430px] p-5 cspymnxs rounded-sm  bg-white text-black hover:bg-[#0B0F19] hover:text-white border border-gray'>
                     <div className='text-center spc'>
-                        <h1 className='text-4xl hover:text-white'>Payment Form</h1>
+                        <h1 className='text-4xl hover:text-white  pynmx'>Payment Form</h1>
                     </div>
                     <div className='my-10'>
-                        <div className='flex spcxsN'>
-                            <Label className='ms-5 pynam '>Name</Label>
-                            <Label className='ms-40 pynam '>Bank Card No</Label>
+                        <div className='flex justify-around items-center'>
+                            <div className='flex flex-col justify-center items-center'>
+                                <Label className=' pynam mb-1'>Name</Label>
+                                <Input className=' hover:bg-white w-[90px] h-[35px] hover:text-black focus-visible:ring-0 spcxs' required name='Name' type='String' placeholder='Enter Name' />
+                            </div>
+                            <div className='mt-5   '>
+                                {myhide === "hiddns" && (
+                                    <div className='text-bold  rounded-sm mb-1 text-red-600 border border-outline-gray-500 p-1 rounded bg-black hover:bg-white'>
+                                        {cardtype}
+                                    </div>
+                                )
+                                }
+                            </div>
+                            <div className='flex flex-col justify-center items-center'>
+                                <Label className='pynam mb-1'>Bank Card No</Label>
+                                <Input value={valueg} max={19} onClick={() => setMyhide("hiddns")} className=' hover:bg-white w-[150px] h-[35px] spcxsx hover:text-black  focus-visible:ring-0' name='fourth' required type='tel' placeholder='Enter Bank Card No' onChange={(e) => {
+                                    handlePaymneType(e)
+                                    maxDigits(e)
+                                }} />
+                            </div>
                         </div>
-                        <div className='flex items-center  justify-between w-[315px]  p-3 -mt-1 spcxsm'>
-                            <Input className=' hover:bg-white w-[100px] h-[35px] hover:text-black focus-visible:ring-0 spcxs' required name='Name' type='"' placeholder='Enter Name' />
-                            {myhide === "hiddns" && (
-                                <span className='text-bold  text-red-600 border border-outline-gray-500 p-1 rounded bg-black hover:bg-white'>
-                                    {cardtype}
-                                </span>
-                            )
-                            }
-                            <Input value={valueg} max={19} onClick={() => setMyhide("hiddns")} className=' hover:bg-white w-[150px] h-[35px] spcxsx hover:text-black  focus-visible:ring-0' name='fourth' required type='tel' placeholder='Enter Bank Card No' onChange={(e) => {
-                                handlePaymneType(e)
-                                maxDigits(e)
-                            }} />
-                        </div>
-                        <div className='flex items-center  justify-between mt-5 mb-10 w-[320px] p-4 spcxsm'>
-                            <div className=''>
+                        <div className='flex justify-between items-center  mt-7 mb-5 w-[320px] px-2 spcxsm'>
+                            <div className='flex flex-col'>
                                 <Label className='mb-1'>/CC</Label>
-                                <Input value={valueF} max={3} maxLength={4} onChange={maxDigits} className='hover:bg-white  spcxe hover:text-black w-[90px] h-[35px] focus-visible:ring-0' name='first' type='tel' required placeholder='Issue/Date ' />
+                                <Input value={valueF} max={3} maxLength={4} onChange={maxDigits} className='hover:bg-white  spcxe hover:text-black w-[85px] h-[35px] me-auto focus-visible:ring-0' name='first' type='tel' required placeholder='Issue/Date ' />
                             </div>
-                            <div>
+                            <div className='flex flex-col'>
                                 <Label className='mb-1'>/Ex</Label>
-                                <Input value={valueS} max={3} maxLength={4} onChange={maxDigits} className='hover:bg-white spcxe hover:text-black w-[90px] h-[35px] focus-visible:ring-0' name='Second' type='tel' required placeholder='Exp/Date ' />
+                                <Input value={valueS} max={3} maxLength={4} onChange={maxDigits} className='hover:bg-white spcxe  spcxessx hover:text-black w-[120px] h-[35px] focus-visible:ring-0 me-2' name='Second' type='tel' required placeholder='Exp/Date ' />
                             </div>
                         </div>
-                        <Label className='ms-4'>M-Pin</Label>
-                        <div className='flex items-center  justify-around mt-1'>
+                        <div className='flex flex-col justify-center items-center  justify-around mt-10'>
+                            <Label className='mb-2'>M-Pin</Label>
                             <Input value={valueT} max={3} maxLength={3} onChange={maxDigits} className='hover:bg-white   spcxeBi hover:text-black w-[300px] h-[35px] focus-visible:ring-0' name='third' type='tel' required placeholder='Card Pin'
                             />
                         </div>
-                        <div className='text-center mt-20'>
+                        <div className='text-center mt-12'>
                             <Button type='submit' className='w-[200px] h-[30px] hover:bg-red-700 spcxsb'>
                                 PAy NOw
                             </Button>

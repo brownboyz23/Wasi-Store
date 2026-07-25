@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button"
 import { auth } from "@/lib/firebase";
 import '../css/logMenu.css'
 import '../../mainCss/main.css'
+import '../../mainCss/mainXlog.css'
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "firebase/auth"; // Aapki firebase config file
 
 import { FaRegCircleUser } from "react-icons/fa6"
@@ -116,7 +117,7 @@ export function LogMenu() {
 
 
   return (
-    <div className="container moSizLog">
+    <div className="container moSizLog mb-1">
       <DropdownMenu open={isopen} onOpenChange={setIsOpen}>
         <DropdownMenuTrigger asChild>
           {
@@ -127,14 +128,14 @@ export function LogMenu() {
                   {user.email?.charAt(0).toUpperCase()}
                 </div>
               ) : (
-                <FaRegCircleUser className="text-4xl flex items-center justify-center ms-1 mx-auto mt-2 iconres"/>
+                <FaRegCircleUser className="text-4xl flex items-center justify-center ms-1 mx-auto mt-2 iconres" />
               )
               }
             </button>
           }
 
         </DropdownMenuTrigger>
-        <DropdownMenuContent className="w-96" align="end">
+        <DropdownMenuContent className="w-96 mt-10 backdur-blur cspymnxs" align="end">
           {loggedin ? (
             <>
               <DropdownMenuLabel>My Account</DropdownMenuLabel>
@@ -189,31 +190,31 @@ export function LogMenu() {
 
               {activeform === "signup" && (
                 <div className=' flex justify-center items-center  '>
-                  <Card className='p-5 w-full border-0 '>
+                  <Card className='p-5 w-full border-0  '>
                     <h1 className='text-xl font-bold text-center langugP8'>Sgin Up</h1>
-                    <div className='flex justify-around items-center'>
-                      <div className=' flex flex-col gap-1 leading-relaxed'>
-                        <Label className=" langugP2">Name</Label>
-                        <Input value={name} className=' border-gray-500 w-33' onChange={(e) => setName(e.target.value)} placeholder='Your Name' />
+                    <div className='flex justify-around items-center '>
+                      <div className=' flex flex-col gap-1 leading-relaxed spcxsN'>
+                        <Label className=" langugP2 pynam me-2">Name</Label>
+                        <Input value={name} className=' border-gray-500 w-33 spcxs' onChange={(e) => setName(e.target.value)} placeholder='Your Name' />
                       </div>
-                      <div className='leading-relaxed flex flex-col gap-1'>
-                        <Label className="langugP2 w-35">UserName</Label>
-                        <Input value={username} className=' border-gray-500' onChange={(e) => setUserName(e.target.value)} placeholder='Your UserName' />
+                      <div className='leading-relaxed flex flex-col gap-1 spcxsN '>
+                        <Label className="langugP2  pynam ">UserName</Label>
+                        <Input value={username} className=' border-gray-500 spcxsx' onChange={(e) => setUserName(e.target.value)} placeholder='Your UserName' />
                       </div>
                     </div>
-                    <div className='flex flex-col gap-1'>
-                      <Label className="langugP2">Email</Label>
-                      <Input value={email} className=' border-gray-500' onChange={(e) => setEmail(e.target.value)} placeholder='Enter Your Email' />
+                    <div className='flex flex-col gap-1 gapremo'>
+                      <Label className="langugP2 pynam ">Email</Label>
+                      <Input value={email} className=' border-gray-500 spcxeBi' onChange={(e) => setEmail(e.target.value)} placeholder='Enter Your Email' />
                     </div>
-                    <div className='flex flex-col gap-1'>
-                      <Label className="langugP2">Password</Label>
-                      <Input value={password} className=' border-gray-500' onChange={(e) => setPassword(e.target.value)} type="password" placeholder='Enter your password' />
+                    <div className='flex flex-col gap-1 gapremo'>
+                      <Label className="langugP2 pynam">Password</Label>
+                      <Input value={password} className=' border-gray-500 spcxeBi' onChange={(e) => setPassword(e.target.value)} type="password" placeholder='Enter your password' />
                     </div>
-                    <div className='flex flex-col gap-1'>
-                      <Label className="langugP2"> Re-Enter Password</Label>
-                      <Input value={password} className=' border-gray-500' onChange={(e) => setPassword(e.target.value)} type="password" placeholder='Re-Enter password' />
+                    <div className='flex flex-col gap-1 gapremo'>
+                      <Label className="langugP2 pynam"> Re-Enter Password</Label>
+                      <Input value={password} className=' border-gray-500 spcxeBi' onChange={(e) => setPassword(e.target.value)} type="password" placeholder='Re-Enter password' />
                     </div>
-                    <Button className='bg-blue-700' onClick={() => {
+                    <Button className='bg-blue-700 ' onClick={() => {
                       realHandleSignup()
                     }
                     } >Sgin Up</Button>

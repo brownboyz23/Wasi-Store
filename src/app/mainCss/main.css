@@ -947,4 +947,16 @@
         margin-left: 10px;
     }
 
+    .iconres {
+        font-size: 30px;
+        margin-top: 11px;
+    }
+
+    .iconresx {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+        margin-top: 11px;
+    }
+
 }

@@ -123,7 +123,7 @@ export function LogMenu() {
           {
             <button suppressHydrationWarning className="focus:outline-none me-5 mb-3 responXX ">
               {user ? (
-                <div className={`w-11 h-11 flex justify-center items-center bg-blue-500 rounded-full text-2xl font-bold langugP8 ${changingcolors(user.email || "default")} `} >
+                <div className={`w-11 h-11 flex justify-center items-center bg-blue-500 rounded-full text-2xl font-bold langugP8 iconresx ${changingcolors(user.email || "default")} `} >
 
                   {user.email?.charAt(0).toUpperCase()}
                 </div>

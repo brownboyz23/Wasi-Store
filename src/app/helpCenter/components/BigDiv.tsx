@@ -35,9 +35,9 @@ const BigDiv = () => {
     return (
         <div>
             <div className='container'>
-                <div onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)} className='w-full h-[350px] border col-lg-2 col-md-6 col-md-12 hover:shadow-xl rounded mb-50 p-4 '>
+                <div onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)} className='w-full h-[350px] custodhvd border col-lg-2 col-md-6 col-md-12 bg-white hover:shadow-2xl rounded mb-50 p-4 '>
                     <div className='w-full  flex items-center justify-center'>
-                        <AlertCircle className='w-[50px] h-[50px] text-red-600 rounded-full ' />
+                        <AlertCircle className='w-[50px] h-[50px] text-red-600 rounded-full rdicon ' />
                     </div>
                     <p className=' langugP6 h-[350px]  text-bold text-4xl leading-relaxed text-center custodevHd'
                         dangerouslySetInnerHTML={{ __html: Descrpation[count].desc }}

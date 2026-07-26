@@ -74,7 +74,7 @@ const ThreeMainsDiv = () => {
     return (
         <div>
             <div className=''>
-                <h1 className='font4 text-center mt-20 text-4xl fontB500'>Wellcome To Admin Panel</h1>
+                <h1 className='font4 text-center mt-20 text-4xl fontB500  dshbpNam'>Wellcome To Admin Panel</h1>
                 <div className='w-full'>
                     <div className='flex justify-around mb-30 mt-30  dshbpxFxk'>
                         <div className='w-[520px]'>
@@ -110,8 +110,8 @@ const ThreeMainsDiv = () => {
                                                         <Button className='text-red-600 w-[20px] h-[15px] bg-transparent hover:ring-2 hover:ring-gray-300 hover:bg-0 ' onClick={() => {
                                                             setMainProducts(items)
                                                             setisEditOpen(true)
-                                                        }}><span className='font-bold text-2xl text-center'  >
-                                                                <FaPencil />
+                                                        }}><span className='font-bold text-2xl text-center '  >
+                                                                <FaPencil className='' />
                                                             </span> </Button>
                                                         {/* </Link> */}
                                                         <Button className='text-red-600 w-[20px] h-[15px] bg-transparent hover:ring-2 hover:ring-gray-300 hover:bg-0 '><span className='font-bold text-2xl text-center' onClick={() => sethoverProducts(items)}><FaEye /></span></Button>

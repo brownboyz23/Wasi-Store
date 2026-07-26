@@ -506,6 +506,23 @@ body {
 }
 
 @media screen and (min-width:320px) and (max-width:479px) {
+
+    .dshbpNam{
+        font-size: 20px;
+    }
+
+    .adcdc2 {
+        width: 150px;
+        height: 35px;
+        padding: 0px;
+        border-radius: 3px;
+    }
+
+    .adcdc3 {
+        width: 150px;
+        height: 25px;
+    }
+
     .dshbpxFxk {
         width: 100%;
         height: 100%;
@@ -525,10 +542,10 @@ body {
     }
 
     .dshbpxF {
-        width: 320px;
+        width: 310px;
         height: 220px;
         display: flex;
-        padding: 5px;
+        padding: 4px 3px;
     }
 
 
@@ -583,13 +600,20 @@ body {
     }
 
     .dbpxs {
-        width: 30px;
+        width: 12px;
         height: 100%;
         text-align: center;
         display: flex;
         flex-direction: column;
-        gap: 7px;
+        align-items: center;
+        gap: 6px;
         margin-top: -5px;
+        margin-right: 5px;
+    }
+    .dbpxsza{
+        width: 5px !important;
+        height: 5px;
+        font-size: 5px;
     }
 
     .uprstr {
@@ -598,11 +622,20 @@ body {
 
     .hplscsdxs {
         width: 300px;
-        height: 500px;
+        height: 550px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+        margin-left: 15px;
+    }
+
+    .editmd{
+        justify-content: start;
+        margin-left: 0px;
+    }
+    .editmds{
+        margin-left: 20px;
     }
 
     .hplscsd {
@@ -639,6 +672,7 @@ body {
         width: 65px;
         height: 25px;
         border-radius: 3px;
+        font-size: 12px;
     }
 
 

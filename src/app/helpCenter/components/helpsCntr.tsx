@@ -64,7 +64,7 @@ const HelpCntr = () => {
                         <h1 className='text-4xl text-center mt-5 langugP8 hplscsdxsnm fturProHN'>Help Categories</h1>
                         <div className='relative flex flex-col gap-5 p-5 hplcft'>
                             <div className=''>
-                                <div className='mt-8'>
+                                <div className='mt-8 mrfx'>
                                     <Button disabled={totalAtempts >= 2} onClick={() => setAcount(!acount)} className='w-full h-[60px] hplcinpu border text-2xl  langugP6'>{acc}</Button>
                                 </div>
                                 {acount && (
@@ -75,7 +75,7 @@ const HelpCntr = () => {
                                                 setAcc(items)
                                                 maxAtemmpt("acount")
                                             }}
-                                                className="p-3 hover:bg-blue-500 hover:text-white cursor-pointer border-b last:border-0 text-xl text-center  "
+                                                className="p-3 hplcinpuxx hover:bg-blue-500 hplcinpuxx hover:text-white cursor-pointer border-b last:border-0 text-xl text-center  "
                                             >
                                                 {items}
                                             </li>
@@ -87,7 +87,7 @@ const HelpCntr = () => {
 
                             </div>
                             <div>
-                                <div className='mt-8'>
+                                <div className='mt-8 mrfx'>
                                     <Button disabled={totalAtempts >= 2} onClick={() => setTechnical(!technical)} className='w-full h-[60px] hplcinpu border text-2xl  langugP6'> {techn} </Button>
                                 </div>
                                 {technical && (
@@ -98,7 +98,7 @@ const HelpCntr = () => {
                                                 settechn(items)
                                                 maxAtemmpt("technical")
                                             }}
-                                                className="p-3 hover:bg-blue-500 hover:text-white cursor-pointer border-b last:border-0 text-xl text-center  "
+                                                className="p-3 hover:bg-blue-500 hplcinpuxx hover:text-white cursor-pointer border-b last:border-0 text-xl text-center  "
                                             >
                                                 {items}
                                             </li>
@@ -111,7 +111,7 @@ const HelpCntr = () => {
 
                             </div>
                             <div>
-                                <div className=' mt-8'>
+                                <div className=' mt-8 mrfx'>
                                     <Button disabled={totalAtempts >= 2} onClick={() => setBilling(!billing)} className='w-full h-[60px] hplcinpu border text-2xl  langugP6'> {billi} </Button>
                                 </div>
                                 {billing && (
@@ -123,7 +123,7 @@ const HelpCntr = () => {
                                                     setBilli(items)
                                                     maxAtemmpt("billing")
                                                 }}
-                                                className="p-3 hover:bg-blue-500 hover:text-white cursor-pointer border-b last:border-0 text-xl text-center "
+                                                className="p-3 hover:bg-blue-500 hplcinpuxx hover:text-white cursor-pointer border-b last:border-0 text-xl text-center "
                                             >
                                                 {items}
                                             </li>
@@ -134,7 +134,7 @@ const HelpCntr = () => {
                                 }
                             </div>
                             <div>
-                                <div className=' mt-8'>
+                                <div className=' mt-8 mrfx'>
                                     <Button disabled={totalAtempts >= 2} onClick={() => setFeedback(!feedback)} className='w-full h-[60px] hplcinpu border text-2xl  langugP6'> {feedbac} </Button>
                                 </div>
                                 {feedback && (
@@ -146,7 +146,7 @@ const HelpCntr = () => {
                                                     setFeedbac(items)
                                                     maxAtemmpt("other")
                                                 }}
-                                                className="p-3 hover:bg-blue-500 hover:text-white cursor-pointer border-b last:border-0 text-xl text-center "
+                                                className="p-3 hover:bg-blue-500 hplcinpuxx hover:text-white cursor-pointer border-b last:border-0 text-xl text-center "
                                             >
                                                 {items}
                                             </li>
@@ -157,7 +157,7 @@ const HelpCntr = () => {
                                 }
                             </div>
                             <div>
-                                <div className=' mt-8'>
+                                <div className=' mt-8 mrfx'>
                                     <Button disabled={totalAtempts >= 2} onClick={() => setOther(!other)} className='w-full h-[60px] hplcinpu border text-2xl  langugP6'> {othr} </Button>
                                 </div>
                                 {other && (
@@ -169,7 +169,7 @@ const HelpCntr = () => {
                                                     setOthr(items)
                                                     maxAtemmpt("feedback")
                                                 }}
-                                                className="p-3 hover:bg-blue-500 hover:text-white cursor-pointer border-b last:border-0 text-xl text-center  "
+                                                className="p-3 hover:bg-blue-500 hplcinpuxx hover:text-white cursor-pointer border-b last:border-0 text-xl text-center  "
                                             >
                                                 {items}
                                             </li>

@@ -73,10 +73,10 @@ const EditModal = ({ hoverPro, isEdit, setEdit, setHover }: EditModal) => {
 
     return (
         <div className='container' >
-            <div className='fixed inset-0 z-[999] flex items-center justify-center bg-black/40 backdrop-blur-md '
+            <div className='fixed inset-0 z-[999] flex items-center justify-center bg-black/40 backdrop-blur-md editmd'
             >
                 <div className=''>
-                    <div className='z-50 absolute mt-1 mx-1   '>
+                    <div className='z-50 absolute mt-1 mx-1  editmds  '>
                         <Button onClick={() => setEdit(false)}>
                             <FaMinus />
                         </Button>

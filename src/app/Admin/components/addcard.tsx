@@ -62,7 +62,7 @@ const AddCards = () => {
         <div>
             <div className='container mb-40 w-full'>
                 <div className='flex justify-center items-center '>
-                    <div className='flex flex-col justify-center items-center rounded-md hover:shadow-lg gap-10 border p-4 w-[450px] h-[500px] hplscsdxs'>
+                    <div className='flex flex-col justify-center items-center rounded-md hover:shadow-lg gap-10 border p-4 w-[450px] h-[600px] hplscsdxs'>
                         <h1 className='text-center text-2xl fontB500 font2'>Add Card</h1>
                         <div>
                             <Input type='text' className='w-[380px] h-[40px] outBrder border-0 border-b hplscsde ' onChange={(e) => setImage(e.target.value)} placeholder='Image URL' />
@@ -85,11 +85,11 @@ const AddCards = () => {
                                 setDesc(formated)
                             }} placeholder='Descripation' />
                         </div>
-                        <div className='w-full h-[50px] flex justify-center items-center' >
-                            <div className=' w-[150px] h-[50px] border flex justify-center items-center rounded-md ' onClick={() => setIsOpen(!isopen)}>
+                        <div className='w-full h-[50px] flex justify-center items-center ' >
+                            <div className=' w-[150px] h-[50px] border flex justify-center items-center rounded-md adcdc2 ' onClick={() => setIsOpen(!isopen)}>
                                 <span>{category}</span>
                                 {isopen && (
-                                    <div className="absolute  w-[145px] h-[50px] overflow-y-auto rounded-sm font-bold text-center">
+                                    <div className="absolute  w-[145px] h-[50px] overflow-y-auto rounded-sm font-bold text-center adcdc3">
                                         {options.map((opt, index) =>
                                             <div
                                                 key={index}

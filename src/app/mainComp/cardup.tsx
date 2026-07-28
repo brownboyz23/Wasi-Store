@@ -49,9 +49,10 @@ const CardsUp = ({ ProCardzs, closeCard }: Component) => {
 
     return (
 
-        <div className='container  rounded-md crdupx' onClick={closeCard}>
-            <div className='crdupxfs'>
-                <Card className='crdupxm'>
+        <div className='container  rounded-md crdupx  ' onClick={closeCard}>
+            <div className='crdupxfs '>
+
+                <Card className='crdupxm '>
                     <img src={ProCardzs.image}
                         alt=''
                         width={350}
@@ -59,30 +60,30 @@ const CardsUp = ({ ProCardzs, closeCard }: Component) => {
                         className='w-full object-fill crdupxIm'
                     />
                     <CardHeader className='flex flex-col gap-3 justify-center items-center crdupxsm'>
-                        <CardTitle className='text-3xl crdupxHn'>
+                        <CardTitle className='text-3xl crdupxHn text-center fsnam'>
                             {ProCardzs.name}
                         </CardTitle>
                         <div className='mt-2'>
-                            <h1 className='text-xl'> <span className='text-red-500 font-bold'>RS :</span> {ProCardzs.price}</h1>
+                            <h1 className='text-xl fsprx'> <span className='text-red-500 font-bold'>RS :</span> {ProCardzs.price}</h1>
                         </div>
-                        <CardFooter className='flex flex-col justify-center gap-3 items-center text-yellow-400'>
-                            <CardDescription className='text-xl text-gray-400 text-center line-clamp-2 crdupxnM'>
-                                {ProCardzs.desc}
-                            </CardDescription>
-                            <div className='flex justify-around items-center'>
-                                <FaStar />
-                                <FaStar />
-                                <FaStar />
-                                <FaStar />
-                                <FaStar />
-                            </div>
-                        </CardFooter>
+                        <CardDescription className='text-xl fsDesc text-gray-400 text-center line-clamp-2 crdupxnM'>
+                            {ProCardzs.desc}
+                        </CardDescription>
+                    </CardHeader>
+                    <CardFooter className='flex flex-col justify-center gap-3 items-center text-yellow-400'>
+                        <div className='flex justify-around items-center'>
+                            <FaStar />
+                            <FaStar />
+                            <FaStar />
+                            <FaStar />
+                            <FaStar />
+                        </div>
                         <div className='flex justify-center items-center '>
                             <Button className='w-[10vw] h-[35px] crdupxbtnb' onClick={() => handleBuyNow(ProCardzs)}>
                                 Buy Now
                             </Button>
                         </div>
-                    </CardHeader>
+                    </CardFooter>
                 </Card>
             </div>
         </div>

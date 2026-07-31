@@ -30,12 +30,15 @@ function ConSearchBar() {
     const [products, setProducts] = useState<products[]>([])
 
     const searchparams = useSearchParams()
-    const querysearch = (searchparams?.get("query") || "").toLowerCase();
+    const querysearch = (searchparams?.get("query") || "");
 
-    const [searchitem, setSearchitem] = useState("")
+    const [searchitem, setSearchitem] = useState('')
+    const activeSearch = searchitem.trim() !== "" ? searchitem : querysearch
+
+
 
     useEffect(() => {
-        setSearchitem(querysearch.toLowerCase().trim())
+        setSearchitem(querysearch)
     }, [querysearch])
 
 
@@ -60,11 +63,11 @@ function ConSearchBar() {
 
     const handleBuyNow = async (items: products) => {
         try {
-            await addDoc(collection(db, "products"), {
+            await addDoc(collection(db, "orders"), {
                 name: items.name,
                 price: items.price,
                 desc: items.desc,
-                id: items.id,
+                image: items.image,
                 createdAt: new Date(),
                 status: "Pending",
             })
@@ -80,7 +83,7 @@ function ConSearchBar() {
     const filteredProducts = products.filter((item) => {
         const search = searchitem.toLowerCase().trim()
 
-        if (!search) return false;
+        if (!activeSearch) return false;
 
         return (
             item.name?.toString().toLowerCase().includes(search) ||
@@ -93,9 +96,9 @@ function ConSearchBar() {
     return (
         <div>
             <div className='container min-h-screen '>
-                <div className='w-full relative mt-40 '>
+                <div className='w-full relative mt-40  '>
                     {filteredProducts.length > 0 ? (
-                        <div className='CardXrp'>
+                        <div className='CardXrp CardXrpxv'>
                             {
                                 filteredProducts.map((items, index) => (
                                     <div key={index} className='relative'>
@@ -126,7 +129,7 @@ function ConSearchBar() {
                                                 </div>
                                             </CardHeader>
                                         </Card>
-                                        {hoverProducts && String(hoverProducts.id || hoverProducts.id) === String(items.id || items.id) && (
+                                        {hoverProducts === items && (
                                             <div className='absolute top-10 left-10 z-50  overflow-y-auto'>
                                                 <CardsUp
                                                     ProCardzs={hoverProducts}

@@ -6,11 +6,27 @@
         gap: 3vw;
     }
 
+    .CardXrpxv {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        row-gap: 3vw;
+    }
+
+    
+
+
+
     .CardResp {
         width: 200px;
         height: 400px;
         box-shadow: white;
-        border: 1px solid rgba(128, 128, 128, 0.393);
+        box-sizing: border-box;
+    }
+    .CardResp {
+        width: 230px;
+        height: 400px;
+        box-shadow: white;
         box-sizing: border-box;
     }
 

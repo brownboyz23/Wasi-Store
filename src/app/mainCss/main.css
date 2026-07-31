@@ -66,13 +66,15 @@
 
 
     .CardXrp {
+        width: 1200px;
+        height: 100%;
         display: grid;
         grid-template-columns: repeat(5, minmax(0, 1fr));
         gap: 2vw;
     }
 
     .CardResp {
-        width: 250px;
+        width: 220px;
         height: 400px;
         box-shadow: white;
         border: 1px solid rgba(128, 128, 128, 0.393);

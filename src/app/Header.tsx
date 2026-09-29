@@ -24,9 +24,11 @@ const HeaderPAge = () => {
 
     return (
         <div className=''>
-            <div className='w-full fixed top-0 left-0 z-[60] backdrop-blur sticky'>
-                <div className='bg-black flex items-center justify-center p-5 h-20 text-white respono '>
-                    <h1 className='fontB600 flex MAinNam font5 pl-2 moSizName'>WASI-<span className='clrbtn'>STORE</span></h1>
+            <div className='w-full fixed top-0 left-0 z-[60]  sticky '>
+                <div className='bg-black backdrop-blur  shadow-lg border-white/10 flex items-center justify-center p-5 h-20 text-white respono '>
+                    <div className='clrmov bg-[conic-gradient(from_0deg,#ff0055,#7000ff,#00e5ff,#ffbe0b,#ff0055)] animate-[spin_3s_linear_infinite] q w-[180px] h-auto border-2 rounded-full'>
+                        <h1 className='fontB600 fontd flex MAinNam font5 pl-2 moSizName'>WASI-<span className='clrbtn'>STORE</span></h1>
+                    </div>
                     {<DropdownMenu>
                         <DropdownMenuTrigger asChild className='mosizDro'>
                             <Button className='border-1 '>
@@ -44,7 +46,7 @@ const HeaderPAge = () => {
                                         <Link href={'/'} className='Dropname font2'>Home</Link>
                                     </DropdownMenuItem>
                                     <DropdownMenuItem asChild>
-                                        <Link href={'/products'} className='Dropname fontB400 font2'>Products</Link>
+                                        <Link href={'/products'} className='Dropname fontB400  font2'>Products</Link>
                                     </DropdownMenuItem>
                                     <DropdownMenuItem asChild>
                                         <Link href={'/Customize'} className='Dropname fontB400 font2'>Customize</Link>
@@ -64,12 +66,12 @@ const HeaderPAge = () => {
                     </DropdownMenu>}
                     <div className='respnv'>
                         <nav className='respnvX'>
-                            <Link href={'/'} className=' fontsIz font2'>Home</Link>
-                            <Link href={'/products'} className=' fontsIz fontB400 font2 '>Products</Link>
-                            <Link href={'/Customize'} className=' fontsIz fontB400 font2 '>Customize</Link>
-                            <Link href={'/Dashboard'} className=' fontsIz fontB400 font2 '>Dashboard</Link>
-                            <Link href={'/helpCenter'} className=' fontsIz fontB400 font2 '>Help-Center</Link>
-                            <Link href={'/Admin'} className=' fontsIz fontB400 font2 ' hidden>AdminPage</Link>
+                            <Link href={'/'} className=' fontsIz fontg hover:border-b-2 hover:border-red-500 font2 hover:border-b-2 hover:border-red-500'>Home</Link>
+                            <Link href={'/products'} className=' fontsIz fontg hover:border-b-2 hover:border-red-500 fontB400 font2 '>Products</Link>
+                            <Link href={'/Customize'} className=' fontsIz fontg hover:border-b-2 hover:border-red-500 fontB400 font2 '>Customize</Link>
+                            <Link href={'/Dashboard'} className=' fontsIz fontg hover:border-b-2 hover:border-red-500 fontB400 font2 '>Dashboard</Link>
+                            <Link href={'/helpCenter'} className=' fontsIz fontg hover:border-b-2 hover:border-red-500 fontB400 font2 '>Help-Center</Link>
+                            <Link href={'/Admin'} className=' fontsIz fontg hover:border-b-2 hover:border-red-500 fontB400 font2 ' hidden>AdminPage</Link>
                         </nav>
 
                     </div>

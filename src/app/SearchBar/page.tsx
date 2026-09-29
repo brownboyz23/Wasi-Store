@@ -95,14 +95,14 @@ function ConSearchBar() {
 
     return (
         <div>
-            <div className='container min-h-screen '>
+            <div className='container min-h-screen'>
                 <div className='w-full relative mt-40  '>
                     {filteredProducts.length > 0 ? (
                         <div className='CardXrp CardXrpxv'>
                             {
                                 filteredProducts.map((items, index) => (
                                     <div key={index} className='relative'>
-                                        <Card className='w-[200px] min-h-[320px] py-0  border white shadow-lg CardResp' onClick={() => setHoveredProducts(items)}>
+                                        <Card className='w-[200px] min-h-[320px] py-0  border white shadow-lg CardRespxc' onClick={() => setHoveredProducts(items)}>
                                             <img
                                                 src={items.image}
                                                 alt=''

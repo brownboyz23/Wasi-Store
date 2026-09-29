@@ -4,9 +4,8 @@ import React, { useEffect, useState } from 'react'
 import './css/products.css'
 import { FaStar } from 'react-icons/fa6'
 import { Button } from '@/components/ui/button'
-import { addDoc, collection, getDocs } from 'firebase/firestore'
+import { addDoc, collection, onSnapshot } from 'firebase/firestore'
 import { db } from '@/lib/firebase'
-import CardsUp from '@/app/mainComp/cardup'
 import { useRouter } from 'next/navigation'
 // import { product } from '@/types'
 
@@ -21,32 +20,28 @@ interface products {
 
 const ProductsSection = () => {
 
-    const [hoveredProduct, setHoveredProduct] = useState<products | null>(null)
+    // const [hoveredProduct, setHoveredProduct] = useState<products | null>(null)
     const [products, setProducts] = useState<products[]>([])
-    const [loading, setLoading] = useState(false)
+    const [loading, setLoading] = useState(true)
 
     const router = useRouter()
 
     useEffect(() => {
-        const dataReciver = async () => {
-            try {
-                const queryContent = await getDocs(collection(db, "products"))
-                const data = queryContent.docs.map(doc => ({
-                    id: doc.id,
-                    ...(doc.data() as products)
+        const dataReciver = onSnapshot(collection(db, 'products'), (snapshot) => {
 
-                }))
-                setProducts(data)
-                setLoading(true)
-            } catch (erorr) {
-                console.log("in documents erorrs was found", erorr)
-                alert("SomeThing Wents to Wrongs")
-            } finally {
-                setLoading(false)
-            }
-        }
-        dataReciver()
-    }, [])
+            const dataQuery = snapshot.docs.map(doc => ({
+                id: doc.id,
+                ...(doc.data() as products)
+            }));
+            setProducts(dataQuery)
+            setLoading(false)
+        }, (error) => {
+            console.log('something Wents To Wrong', error)
+            setLoading(false)
+        })
+        return () => dataReciver()
+    }, []);
+
 
     const handleBuyNow = async (items: products) => {
         try {
@@ -70,21 +65,24 @@ const ProductsSection = () => {
         return curEl.category === "HomePro"
     })
 
-    if (loading) return <h1>Loading...</h1>
+    if (loading) return <h1 className='text-center text-2xl mb-30 tracking-wider semibold animate-pulse'>
+        <span className=' animate-ping inline-block ml-1'>Loading...</span>
+    </h1>
 
     return (
         <div className='container relative mx-none'>
-            <div className='flex  justify-center items-center mt-25 '>
+            <div className='flex justify-center items-center mt-25 '>
                 <div className='py-0'>
                     {products && ((
                         <div className=' w-full CardXrp'>
                             {
                                 filtered.map((items, index) => (
-                                    <Card key={index} className='w-[200px] min-h-[320px] py-0  border white shadow-lg CardResp' onClick={() => setHoveredProduct(items)}>
+                                    <Card key={index} className='w-[200px] min-h-[320px] py-0  border white shadow-lg CardResp crdupse'>
                                         <img
                                             src={items.image}
-                                            alt=''
+                                            alt='products'
                                             style={{ objectFit: "fill" }}
+                                            loading='lazy'
                                             className='w-full  crdimg'
                                         />
                                         <CardHeader className='text-center langugP7 crdHd  h-[150px] '>
@@ -114,18 +112,15 @@ const ProductsSection = () => {
 
                     }
                 </div>
-                <div>
-                    {hoveredProduct && (
-                        <div className="absolute inset-0 fixed flex justify-center items-center  bg-black/40 z-50 ">
-
-                            <CardsUp
-                                ProCardzs={hoveredProduct}
-
-                                closeCard={() => setHoveredProduct(null)}
-                            />
-                        </div>
-                    )}
-                </div>
+                {/* {hoveredProduct && (
+                    <div className='absolute z-50 upcrdhnd'>
+                        <CardsUp
+                            ProCardzs={hoveredProduct}
+                            closeCard={() => setHoveredProduct(null)}
+                        />
+                    </div>
+                )
+                } */}
             </div>
             <div className='flex items-center justify-center mt-30'>
                 <h1 className='fturProHN mb-20'>

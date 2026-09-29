@@ -421,6 +421,8 @@
     .mosizDro {
         display: none;
     }
+
+
 }
 
 
@@ -651,6 +653,8 @@
     }
 
 
+    /* upcard */
+
 
 }
 
@@ -842,9 +846,6 @@
         font-family: "Bricolage Grotesque", sans-serif;
     }
 
-    .respono {
-        /* margin-top: 5px; */
-    }
 
     /* choose sec */
 
@@ -879,7 +880,7 @@
 
 
     .slidProx {
-        width: 100%;
+        width: 1200px;
         height: 200px;
     }
 
@@ -887,8 +888,8 @@
         width: 70px;
         height: 30px;
         position: absolute;
-        bottom: 10px;
-        left: 15px;
+        bottom: 70px;
+        left: 30;
         z-index: 90;
     }
 
@@ -961,4 +962,5 @@
         margin-top: 11px;
     }
 
+    /* uperCard */
 }

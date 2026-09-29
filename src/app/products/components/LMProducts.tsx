@@ -10,6 +10,7 @@ import { useRouter } from 'next/navigation';
 import '../../mainCss/mainX.css'
 
 
+
 interface products {
     image: string,
     name: string
@@ -58,7 +59,6 @@ const LMProducts = () => {
         } catch (error) {
             console.log('there is an error', error)
             alert("Something Wents to Wrong")
-
         }
     }
 
@@ -75,51 +75,50 @@ const LMProducts = () => {
                         <div className=' w-full CardXrp'>
                             {
                                 filterd.map((items, index) => (
-                                    <Card key={index} className='w-[200px] min-h-[320px] py-0  border white shadow-lg CardResp' onClick={() => setHoveredProducts(items)}>
-                                        <img
-                                            src={items.image}
-                                            alt=''
-                                            style={{ objectFit: "fill" }}
-                                            className='w-full  crdimg'
-                                        />
-                                        <CardHeader className='text-center langugP7 crdHd  h-[150px] '>
-                                            <CardTitle className=' line-clamp-1 fontsgs'>
-                                                <h1 className=''> {items.name} </h1>
-                                            </CardTitle>
-                                            <h1 className='mt-1 fontPric'> <span className='text-red-600'>RS</span> : {items.price}  </h1>
-                                            <CardDescription className='line-clamp-2  fontDesc'>
-                                                <h1 > {items.desc} </h1>
-                                            </CardDescription>
-                                            <div className='flex justify-center gap-2 crdstr '>
-                                                <FaStar className='text-yellow-500' />
-                                                <FaStar className='text-yellow-500' />
-                                                <FaStar className='text-yellow-500' />
-                                                <FaStar className='text-yellow-500' />
-                                                <FaStar />
+                                    <div key={index} className='relative'>
+                                        <Card className='w-[200px] min-h-[320px] py-0  border white shadow-lg CardResp' onClick={() => setHoveredProducts(items)}>
+                                            <img
+                                                src={items.image}
+                                                alt=''
+                                                style={{ objectFit: "fill" }}
+                                                className='w-full  crdimg'
+                                            />
+                                            <CardHeader className='text-center langugP7 crdHd  h-[150px] '>
+                                                <CardTitle className=' line-clamp-1 fontFNM'>
+                                                    <h1 className=''> {items.name} </h1>
+                                                </CardTitle>
+                                                <h1 className='mt-1 fontPric'> <span className='text-red-600'>RS</span> : {items.price}  </h1>
+                                                <CardDescription className='line-clamp-2  fontDesc'>
+                                                    <h1 > {items.desc} </h1>
+                                                </CardDescription>
+                                                <div className='flex justify-center gap-2 crdstr '>
+                                                    <FaStar className='text-yellow-500' />
+                                                    <FaStar className='text-yellow-500' />
+                                                    <FaStar className='text-yellow-500' />
+                                                    <FaStar className='text-yellow-500' />
+                                                    <FaStar />
+                                                </div>
+                                                <div className='text-center' >
+                                                    <Button className='w-30 bg-black rounded-sm langugP2 mb-1 ctgbtn' onClick={() => handleBuyNow(items)}>Buy Now</Button>
+                                                </div>
+                                            </CardHeader>
+                                        </Card>
+                                        {hoverProducts === items && (
+                                            <div className='absolute top-10 left-10 z-50  overflow-y-auto'>
+                                                <CardsUp
+                                                    ProCardzs={hoverProducts}
+                                                    closeCard={() => setHoveredProducts(null)}
+                                                />
                                             </div>
-                                            <div className='text-center' >
-                                                <Button className='w-30 bg-black rounded-sm langugP2 mb-1 ctgbtn' onClick={() => handleBuyNow(items)}>Buy Now</Button>
-                                            </div>
-                                        </CardHeader>
-                                    </Card>
+                                        )
+                                        }
+                                    </div>
                                 ))
                             }
                         </div>
                     ))
 
                     }
-                </div>
-                <div>
-                    {hoverProducts && (
-                        <div className="absolute inset-0 fixed flex justify-center items-center  bg-black/40 z-50 ">
-
-                            <CardsUp
-                                ProCardzs={hoverProducts}
-
-                                closeCard={() => setHoveredProducts(null)}
-                            />
-                        </div>
-                    )}
                 </div>
             </div>
         </div>

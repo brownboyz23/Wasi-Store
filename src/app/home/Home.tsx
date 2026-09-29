@@ -10,7 +10,7 @@ import BannerPage from "./components/BannerPage"
 const HomePage = () => {
   return (
     <div>
-      <BannerPage/>
+      <BannerPage />
       <CategoriesPage />
       <ProductsSection />
       <FeaturedPage />

@@ -20,6 +20,7 @@
     "chart.js": "^4.5.1",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "cn": "^0.4.0",
     "date-fns": "^4.1.0",
     "embla-carousel-autoplay": "^8.6.0",
     "embla-carousel-react": "^8.6.0",
@@ -38,7 +39,7 @@
     "react-icons": "^5.5.0",
     "recharts": "^3.8.1",
     "remixicon": "^4.7.0",
-    "swiper": "^14.0.0",
+    "swiper": "^14.2.0",
     "tailwind-merge": "^3.4.0",
     "textarea": "^0.3.0"
   },

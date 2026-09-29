@@ -65,7 +65,7 @@ const FeaturedPage = () => {
             className="w-full h-[300px] object-cover transition-opacity duration-1000"
           />
           <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-white px-6 ">
-            <h1 className="text-3xl font-bold mb-10 text-center fturPro">
+            <h1 className="text-2xl font-bold mb-10 text-center fturPro">
               {content[counter].title}
             </h1>
             <p

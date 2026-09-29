@@ -5,9 +5,11 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Button } from '@/components/ui/button'
 import { useEffect, useState } from 'react'
-import { addDoc, collection, getDocs } from 'firebase/firestore'
+import { addDoc, collection, onSnapshot } from 'firebase/firestore'
 import { db } from '@/lib/firebase'
 import { useRouter } from 'next/navigation'
+import SliderUp from '@/app/mainComp/slidrUp';
+import { Autoplay, EffectCoverflow } from 'swiper/modules';
 
 interface products {
   image: string,
@@ -15,34 +17,31 @@ interface products {
   price: string,
   desc: string,
   category: string,
-  id?: string
 }
 
 const SliderPage = () => {
 
   const [products, setProducts] = useState<products[]>([])
+  const [loading, setLoading] = useState(true)
+  const [upslider, setSliders] = useState<products[] | null>(null)
+  // const [selectpro, setSelectPro] = useState<products[] | null>(null)
 
   const router = useRouter()
 
-
-  // const [firebase] = useState("")
-
-
   useEffect(() => {
-    const addpProducts = async () => {
-      try {
-        const AddData = await getDocs(collection(db, "products"))
-        const data = AddData.docs.map(doc => ({
-          id: doc.id,
-          ...(doc.data() as products)
-        }))
-        setProducts(data)
-      } catch (error) {
-        console.error('There is an Error', error)
-        alert('Something Wents to Wrong')
-      }
-    }
-    addpProducts()
+    const addpProducts = onSnapshot(collection(db, "products"), (snapshot) => {
+
+      const AddData = snapshot.docs.map(doc => ({
+        id: doc.id,
+        ...(doc.data() as products)
+      }))
+      setProducts(AddData)
+      setLoading(false)
+    }, (error) => {
+      console.error('There is an Error', error)
+      alert('Something Wents to Wrong')
+    })
+    return () => addpProducts()
   }, [])
 
 
@@ -69,48 +68,78 @@ const SliderPage = () => {
     return curEl.category === "Slider"
   })
 
-  return (
-    <div className="relative w-screen left-1/2 right-1/2 -ml-[50vw] h-min-screen mx-auto mt-20 mb-30 ">
-      <Swiper
-        loop={true}
-        autoplay={{ delay: 1500, disableOnInteraction: false }}
-        slidesPerView={4}
-        slidesPerGroup={1}
-        loopAdditionalSlides={4}
-        spaceBetween={4}
-        effect='fade'
-        className='w-[1500px]  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 '
-      >
-        {products && (
-          <div className=''>
-            {filtered.map((items, index) => (
-              <SwiperSlide key={index} className=' basis-1/4  '>
-                <div className='relative  h-[200px] slidProx'>
-                  <img
-                    src={items.image}
-                    alt=''
-                    className='w-full h-[180px] rounded'
-                  />
-                  <div className=' absolute inset-0 bg-black/30 h-[180px] rounded-xs'>
-                    <h1 className='text-xl langugP6  text-white ms-1'>{items.name}</h1>
-                  </div>
-                  <div className='hidden'>
-                    {items.desc}
-                  </div>
-                  <div className='w-full relative slidproxs'>
-                    <Button className='border-1 slidbtn ' onClick={() => HandleBuyNow(items)}>
-                      Buy Now
-                    </Button>
-                  </div>
-                </div>
-              </SwiperSlide>
 
-            ))
-            }
+  if (loading) return <h1 className='mt-10 text-center text-2xl semibold tracking-wider animate-pulse'>
+    <span className='animate-ping inline-block  ml-1'>Loading...</span>
+  </h1>
+
+  return (
+    <div className='flex justify-center items-center'>
+      <main>
+        {
+          <div className='w-full h-[100px]   flex justify-center'>
+            <div className=' absolute left top-1 z-99'>
+              <SliderUp ProCardx={upslider}
+                productXs={(item: products) => setSliders([item])}
+              />
+            </div>
           </div>
-        )
         }
-      </Swiper>
+      </main>
+      <div className="relative  w-screen left-1/2 right-1/2 -ml-[50vw] h-min-screen mx-auto mt-20 mb-30">
+        <Swiper
+          loop={true}
+          modules={[EffectCoverflow, Autoplay]}
+          autoplay={{ delay: 1500, disableOnInteraction: false }}
+          slidesPerView={5}
+          slidesPerGroup={1}
+          loopAdditionalSlides={4}
+          spaceBetween={2}
+          effect='coverflow'
+          coverflowEffect={{
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 2.5,
+            slideShadows: false,
+          }}
+          className='w-[2200px]  h-[280px] slidProx  overflow-visible '
+        >
+          {products && (
+            <div className=''>
+              {filtered.map((items, index) => (
+                <div className='relative' key={index}>
+                  <SwiperSlide className=' basis-1/5' >
+                    <div className='relative h-[280px] border-3 rounded-sm white shadow-lg'>
+                      <img
+                        src={items.image}
+                        alt=''
+                        style={{ objectFit: 'fill' }}
+                        className='w-full h-[250px] rounded'
+                      />
+                      <div className=' absolute inset-0 bg-black/30 h-[350px] rounded-xs'>
+                        <h1 className='text-xl langugP6  text-white ms-1'>{items.name}</h1>
+                      </div>
+                      <div className='hidden'>
+                        {items.desc}
+                      </div>
+                      <div className='w-full relative slidproxs'>
+                        <Button className='border-1 slidbtn ' onClick={() => HandleBuyNow(items)}>
+                          Buy Now
+                        </Button>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                </div>
+
+              ))
+              }
+            </div>
+          )
+          }
+        </Swiper>
+
+      </div>
     </div>
   )
 }

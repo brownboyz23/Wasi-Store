@@ -10,8 +10,12 @@ body {
     .crdupx {
         width: 100%;
         height: 550px;
+    }
+
+    .crdupxfs {
+        width: 100%;
+        height: 550px;
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
@@ -19,9 +23,6 @@ body {
     .crdupxm {
         width: 300px;
         height: 530px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         border-radius: 6px;
     }
 
@@ -58,6 +59,7 @@ body {
         color: rgb(134, 134, 134);
     }
 }
+
 
 @media screen and (min-width: 1024px) and (max-width:1199px) {
     .crdupx {
@@ -240,40 +242,35 @@ body {
 @media screen and (min-width: 320px) and (max-width:479px) {
 
     .crdupx {
-        width: 100%;
+        width: 479px !important;
         height: 500px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
 
     .crdupxfs {
-        max-width: 479px !important;
+        width: 250px;
         height: 500px;
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
+        z-index: 999;
     }
 
     .crdupxm {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        width: 250px;
+        height: 420px;
+        padding: 5px;
     }
 
     .crdupxIm {
-        width: 200px;
-        height: 250px;
-        object-fit: cover;
+        width: 100%;
+        height: 150px;
+        object-fit: fill;
         padding: 0px;
     }
 
     .crdupxsm {
         width: 100%;
-        height: 290px;
+        height: 200px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -310,4 +307,6 @@ body {
         width: 150px;
         height: 30px;
     }
+
+
 }

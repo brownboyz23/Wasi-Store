@@ -49,10 +49,9 @@ const CardsUp = ({ ProCardzs, closeCard }: Component) => {
 
     return (
 
-        <div className='container  rounded-md crdupx  ' onClick={closeCard}>
-            <div className='crdupxfs '>
-
-                <Card className='crdupxm '>
+        <div className='container  rounded-md crdupx ' onClick={closeCard}>
+            <div className='crdupxfs w-full   '>
+                <Card className='crdupxm'>
                     <img src={ProCardzs.image}
                         alt=''
                         width={350}

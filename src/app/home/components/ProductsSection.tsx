@@ -70,49 +70,50 @@ const ProductsSection = () => {
     </h1>
 
     return (
-        <div className='container relative mx-none'>
-            <div className='flex justify-center items-center mt-25 '>
-                <div className='py-0'>
-                    {products && ((
-                        <div className=' w-full CardXrp'>
-                            {
-                                filtered.map((items, index) => (
-                                    <Card key={index} className='w-[200px] min-h-[320px] py-0  border white shadow-lg CardResp crdupse'>
-                                        <img
-                                            src={items.image}
-                                            alt='products'
-                                            style={{ objectFit: "fill" }}
-                                            loading='lazy'
-                                            className='w-full  crdimg'
-                                        />
-                                        <CardHeader className='text-center langugP7 crdHd  h-[150px] '>
-                                            <CardTitle className=' line-clamp-1 fontFNM'>
-                                                <h1 className=''> {items.name} </h1>
-                                            </CardTitle>
-                                            <h1 className='mt-1 fontPric'> <span className='text-red-600'>RS</span> : {items.price}  </h1>
-                                            <CardDescription className='line-clamp-2  fontDesc'>
-                                                <h1 > {items.desc} </h1>
-                                            </CardDescription>
-                                            <div className='flex justify-center gap-2 crdstr '>
-                                                <FaStar className='text-yellow-500' />
-                                                <FaStar className='text-yellow-500' />
-                                                <FaStar className='text-yellow-500' />
-                                                <FaStar className='text-yellow-500' />
-                                                <FaStar />
-                                            </div>
-                                            <div className='text-center' >
-                                                <Button className='w-30 bg-black rounded-sm langugP2 mb-1 ctgbtn' onClick={() => handleBuyNow(items)}>Buy Now</Button>
-                                            </div>
-                                        </CardHeader>
-                                    </Card>
-                                ))
-                            }
-                        </div>
-                    ))
+        <div>
+            <div className='container rspncrd relative mx-none'>
+                <div className='flex justify-center items-center mt-25 '>
+                    <div className='py-0'>
+                        {products && ((
+                            <div className=' w-full CardXrp crdanimt'>
+                                {
+                                    filtered.map((items, index) => (
+                                        <Card key={index} className='w-[200px] min-h-[320px] py-0  border white shadow-lg CardResp crdupse '>
+                                            <img
+                                                src={items.image}
+                                                alt='products'
+                                                style={{ objectFit: "fill" }}
+                                                loading='lazy'
+                                                className='w-full  crdimg'
+                                            />
+                                            <CardHeader className='text-center langugP7 crdHd  h-[150px] '>
+                                                <CardTitle className=' line-clamp-1 fontFNM'>
+                                                    <h1 className=''> {items.name} </h1>
+                                                </CardTitle>
+                                                <h1 className='mt-1 fontPric'> <span className='text-red-600'>RS</span> : {items.price}  </h1>
+                                                <CardDescription className='line-clamp-2  fontDesc'>
+                                                    <h1 > {items.desc} </h1>
+                                                </CardDescription>
+                                                <div className='flex justify-center gap-2 crdstr '>
+                                                    <FaStar className='text-yellow-500' />
+                                                    <FaStar className='text-yellow-500' />
+                                                    <FaStar className='text-yellow-500' />
+                                                    <FaStar className='text-yellow-500' />
+                                                    <FaStar />
+                                                </div>
+                                                <div className='text-center' >
+                                                    <Button className='w-30 bg-black rounded-sm langugP2 mb-1 ctgbtn' onClick={() => handleBuyNow(items)}>Buy Now</Button>
+                                                </div>
+                                            </CardHeader>
+                                        </Card>
+                                    ))
+                                }
+                            </div>
+                        ))
 
-                    }
-                </div>
-                {/* {hoveredProduct && (
+                        }
+                    </div>
+                    {/* {hoveredProduct && (
                     <div className='absolute z-50 upcrdhnd'>
                         <CardsUp
                             ProCardzs={hoveredProduct}
@@ -121,6 +122,7 @@ const ProductsSection = () => {
                     </div>
                 )
                 } */}
+                </div>
             </div>
             <div className='flex items-center justify-center mt-30'>
                 <h1 className='fturProHN mb-20'>

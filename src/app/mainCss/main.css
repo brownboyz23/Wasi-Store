@@ -2,6 +2,96 @@
 
 @media screen and (min-width:1200px) {
 
+    .clrmov {
+        width: 180px;
+        height: 40px;
+        background-image: conic-gradient(from 0deg,
+                #ff0055,
+                #7000ff,
+                #00e5ff,
+                #ffbe0b,
+                #ff0055);
+        animation: spin-Conic 3s linear infinite;
+    }
+
+    @keyframes spin-Conic {
+        from {
+            transform: rotate(0deg)
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+
+
+    .crdupse:hover {
+        width: 250px;
+        height: 100%;
+        transition: 0.8s ease-out;
+        transform: scale(1.2);
+    }
+
+    @keyframes slideLeft {
+        0% {
+            opacity: 0;
+            transform: translateX(-100px);
+        }
+
+        50% {
+            opacity: 0.8;
+            transform: translateX(200px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+
+    @keyframes updown {
+        0% {
+            opacity: 0;
+            transform: translateY(100px);
+        }
+
+        50% {
+            opacity: 0.5;
+            transform: translateY(-50px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* 2. BASE CARD CLASS FOR ANIMATION */
+    .crdanimtxs {
+        opacity: 0;
+        /* Shuru mein element visible nahi hoga */
+        animation-name: updown;
+        animation-duration: 3s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+        /* Animation end hone par position retain rakhega */
+    }
+
+    /* 2. BASE CARD CLASS FOR ANIMATION */
+    .crdanimt {
+        opacity: 0;
+        /* Shuru mein element visible nahi hoga */
+        animation-name: slideLeft;
+        animation-duration: 3s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+        /* Animation end hone par position retain rakhega */
+    }
+
+
+
     .respono {
         padding: 0px 30px;
     }
@@ -134,9 +224,55 @@
         height: 28px;
         border-radius: 3px;
     }
+
+    .rspncrd {
+        width: 100%;
+        height: 80vh;
+    }
+
+    /* /// products */
+
+
 }
 
 @media screen and (min-width:1024px) and (max-width : 1199px) {
+
+
+    .clrmov {
+        width: 180px;
+        height: 40px;
+        background-image: conic-gradient(from 0deg,
+                #ff0055,
+                #7000ff,
+                #00e5ff,
+                #ffbe0b,
+                #ff0055);
+        animation: spin-Conic 3s linear infinite;
+    }
+
+    @keyframes spin-Conic {
+        from {
+            transform: rotate(0deg)
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    .clrmov {
+        width: 120px;
+        height: 35px;
+        background: linear-gradient(from(0deg, #ff0055, #7000ff, #ffbe0b, #1f0043));
+        animation: dot 3s linear infinite;
+    }
+
+    .crdupse:hover {
+        width: 250px;
+        height: 100%;
+        transition: 0.8s ease-out;
+        transform: scale(1.2);
+    }
 
     .respono {
         padding: 0px 30px;
@@ -272,6 +408,8 @@
 }
 
 @media screen and (min-width:768px) and (max-width:1023px) {
+
+
     .respono {
         padding: 0px 30px;
     }
@@ -307,7 +445,7 @@
     }
 
     .MAinNam {
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 600;
     }
 
@@ -660,6 +798,40 @@
 
 @media screen and (min-width:320px) and (max-width:479px) {
 
+    .clrmov {
+        width: 55%;
+        height: 100%;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    @property --angle {
+        syntax: '<angle>';
+        initial-value: 0deg;
+        inherits: false;
+    }
+
+    .clrmov {
+        background: linear-gradient(#000, #000) padding-box,
+            conic-gradient(from var(--angle), #ff0055, #7000ff, #00e5ff, #39ff12, #ff0055) border-box;
+        border: 2px solid transparent;
+        border-radius: 9999px;
+        color: #fff;
+        padding: 5px 28px;
+        font-weight: 700;
+        cursor: pointer;
+        animation: rotate 3s linear infinite;
+    }
+
+    @keyframes rotate {
+        to {
+            --angle: 360deg
+        }
+    }
+
     .mosizDro {
         width: 35px;
         height: 35px;
@@ -673,7 +845,7 @@
     .mosizDrownUp {
         width: 100% !important;
         max-width: 479px !important;
-        height: 200px;
+        height: 250px;
         display: flex !important;
         justify-content: center !important;
         align-items: center !important;
@@ -703,14 +875,55 @@
 
     .Dropname {
         width: 100%;
-        height: 35px;
+        height: 40px;
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 12px;
         font-weight: 400;
         border-bottom: 1px solid white;
-        background: gray;
+        background: rgb(172, 172, 172);
+    }
+
+    .Dropname:hover {
+        width: 100%;
+        height: 40px;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    .rspnfrdrop {
+        width: 100%;
+        height: 280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 2px;
+        z-index: 100;
+        margin-top: 1px;
+    }
+
+    .rspnsrch {
+        width: 100%;
+        height: 50px;
+        z-index: 100;
+        background-color: #acacac;
+        margin-top: 25px;
+        border: 1px solid gainsboro;
+        padding: 10px;
+    }
+
+    .inptRspbtn {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    .inptRsp {
+        width: 250px;
+        height: 40px;
+        border: 1px solid whitesmoke;
     }
 
     .fonte {
@@ -880,22 +1093,35 @@
 
 
     .slidProx {
-        width: 1200px;
+        width: 100%;
         height: 200px;
     }
 
+    .rspnswip {
+        width: 100%;
+        height: 27vh;
+    }
+
+    .rspnmng {
+        width: 300px;
+        height: 100%;
+        margin-left: -8em;
+        background-color: #fff;
+    }
+
     .slidbtn {
-        width: 70px;
-        height: 30px;
+        width: 100px;
+        height: 35;
         position: absolute;
-        bottom: 70px;
+        /* bottom: 70px; */
         left: 30;
-        z-index: 90;
+        cursor: pointer;
+        z-index: 99;
     }
 
 
     .MAinNam {
-        font-size: 17px;
+        font-size: 20px;
     }
 
     .respnv {
@@ -960,6 +1186,63 @@
         height: 30px;
         font-size: 14px;
         margin-top: 11px;
+    }
+
+
+    @keyframes slideLeft {
+        0% {
+            opacity: 0;
+            transform: translateX(-100px);
+        }
+
+        50% {
+            opacity: 0.8;
+            transform: translateX(100px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    /* 2. BASE CARD CLASS FOR ANIMATION */
+    .crdanimt {
+        opacity: 0;
+        /* Shuru mein element visible nahi hoga */
+        animation-name: slideLeft;
+        animation-duration: 3s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+        /* Animation end hone par position retain rakhega */
+    }
+
+    @keyframes updown {
+        0% {
+            opacity: 0;
+            transform: translateY(100px);
+        }
+
+        50% {
+            opacity: 0.5;
+            transform: translateY(-50px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* 2. BASE CARD CLASS FOR ANIMATION */
+    .crdanimtxs {
+        opacity: 0;
+        /* Shuru mein element visible nahi hoga */
+        animation-name: updown;
+        animation-duration: 3s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+        /* Animation end hone par position retain rakhega */
     }
 
     /* uperCard */

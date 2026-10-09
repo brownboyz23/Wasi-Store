@@ -1,7 +1,6 @@
 "use client"
-
 export const dynmaic = 'force-dynamic'
-import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
+import { Card, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import '../mainCss/mainX.css'
 import React, { Suspense, useEffect, useState } from 'react'
 import { Button } from '@/components/ui/button'
@@ -101,8 +100,8 @@ function ConSearchBar() {
                         <div className='CardXrp CardXrpxv'>
                             {
                                 filteredProducts.map((items, index) => (
-                                    <div key={index} className='relative'>
-                                        <Card className='w-[200px] min-h-[320px] py-0  border white shadow-lg CardRespxc' onClick={() => setHoveredProducts(items)}>
+                                    <div key={index} className='relative p-1'>
+                                        <Card className='w-[200px] min-h-[320px] py-0  border white shadow-lg CardResp' onClick={() => setHoveredProducts(items)}>
                                             <img
                                                 src={items.image}
                                                 alt=''
@@ -110,7 +109,7 @@ function ConSearchBar() {
                                                 className='w-full  crdimg'
                                             />
                                             <CardHeader className='text-center langugP7 crdHd  h-[150px] '>
-                                                <CardTitle className=' line-clamp-1 fontsgs'>
+                                                <CardTitle className=' line-clamp-1 fontFNM'>
                                                     <h1 className=''> {items.name} </h1>
                                                 </CardTitle>
                                                 <h1 className='mt-1 fontPric'> <span className='text-red-600'>RS</span> : {items.price}  </h1>

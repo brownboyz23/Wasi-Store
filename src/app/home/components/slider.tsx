@@ -103,14 +103,14 @@ const SliderPage = () => {
             modifier: 2.5,
             slideShadows: false,
           }}
-          className='w-[2200px]  h-[280px] slidProx  overflow-visible '
+          className='w-[2200px]  h-[280px] slidProx  overflow-visible rspnswip'
         >
           {products && (
             <div className=''>
               {filtered.map((items, index) => (
                 <div className='relative' key={index}>
                   <SwiperSlide className=' basis-1/5' >
-                    <div className='relative h-[280px] border-3 rounded-sm white shadow-lg'>
+                    <div className='relative h-[280px] border-3 rspnmng rounded-sm white shadow-lg'>
                       <img
                         src={items.image}
                         alt=''

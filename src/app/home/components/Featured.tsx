@@ -54,7 +54,7 @@ const FeaturedPage = () => {
     <div>
       <div className='fturproFX'>
         <div
-          className="relative w-full overflow-hidden rounded-lg fturproF"
+          className="relative w-full overflow-hidden rounded-lg fturproF crdanimtxs"
           onMouseEnter={() => setPaused(true)}
           onMouseLeave={() => setPaused(false)}
         >

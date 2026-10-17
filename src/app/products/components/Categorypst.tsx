@@ -30,6 +30,7 @@ const Categorypst = ({ selectItem }: comp) => {
 
 
     const [hoverProducts, setHoveredProducts] = useState<products | null>(null)
+    const [clickpro, setClickpro] = useState<products | null>(null)
     const [products, setProduct] = useState<products[]>([])
     const router = useRouter()
 
@@ -99,7 +100,10 @@ const Categorypst = ({ selectItem }: comp) => {
                             {
                                 filterd.map((items, index) => (
                                     <div key={index} className='relative'>
-                                        <Card className='w-[200px] min-h-[320px] py-0  border white shadow-lg CardResp' onClick={() => setHoveredProducts(items)}>
+                                        <Card className='w-[200px] min-h-[320px] py-0  border white shadow-lg CardResp' onClick={() => {
+                                            setHoveredProducts(items)
+                                            setClickpro(items)
+                                        }}>
                                             <img
                                                 src={items.image}
                                                 alt=''
@@ -126,6 +130,15 @@ const Categorypst = ({ selectItem }: comp) => {
                                                 </div>
                                             </CardHeader>
                                         </Card>
+                                        {clickpro === items && (
+                                            <div className=' absolute top-10 left-10 z-50  overflow-y-auto upcrdhndx'>
+                                                <CardsUp
+                                                    ProCardzs={clickpro}
+                                                    closeCard={() => setClickpro(null)}
+                                                />
+                                            </div>
+                                        )
+                                        }
                                     </div>
                                 ))
                             }
@@ -136,7 +149,7 @@ const Categorypst = ({ selectItem }: comp) => {
                 </div>
             </div>
             {hoverProducts && (
-                <div className='absolute top-50   z-50  overflow-y-auto upcrdhnd'>
+                <div className='absolute top-50 z-50 overflow-y-auto upcrdhnd'>
                     <CardsUp
                         ProCardzs={hoverProducts}
                         closeCard={() => setHoveredProducts(null)}

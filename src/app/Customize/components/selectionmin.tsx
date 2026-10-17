@@ -134,13 +134,12 @@ const Selectionmin = ({ onDelete, display }: componentsProp) => {
               )}
 
               <div className='w-full flex justify-around items-center w-full h-[30] mt-15 relative '>
-
                 <div className='flex'>
                   <button className='bg-slate-900  px-3 mt-10 rounded text-white font-bold ctgbtnSp'>
                     <span className='text-red-500'>T:</span>{selectcom.reduce((acc, curr) => acc + Number(curr.price || 0), 0)}
                   </button>
                 </div>
-                <div >
+                <div>
                   <Button onClick={() => {
                     localStorage.setItem("PendingOrders", JSON.stringify(selectcom))
                     {
@@ -152,6 +151,10 @@ const Selectionmin = ({ onDelete, display }: componentsProp) => {
                         setSelectItem("pyment")
                         setShowpay(true)
                       }
+                      window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth',
+                      });
                     }
 
 

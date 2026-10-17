@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button'
 import { addDoc, collection, onSnapshot } from 'firebase/firestore'
 import { db } from '@/lib/firebase'
 import { useRouter } from 'next/navigation'
+import CardsUp from '@/app/mainComp/cardup'
 // import { product } from '@/types'
 
 
@@ -20,7 +21,7 @@ interface products {
 
 const ProductsSection = () => {
 
-    // const [hoveredProduct, setHoveredProduct] = useState<products | null>(null)
+    const [hoveredProduct, setHoveredProduct] = useState<products | null>(null)
     const [products, setProducts] = useState<products[]>([])
     const [loading, setLoading] = useState(true)
 
@@ -72,15 +73,15 @@ const ProductsSection = () => {
     return (
         <div>
             <div className='container rspncrd relative mx-none'>
-                <div className='flex justify-center items-center mt-25 '>
+                <div className='flex justify-center items-center mt-25'>
                     <div className='py-0'>
                         {products && ((
                             <div className=' w-full CardXrp crdanimt'>
                                 {
-                                    filtered.map((items, index) => (
-                                        <Card key={index} className='w-[200px] min-h-[320px] py-0  border white shadow-lg CardResp crdupse '>
+                                    filtered.map((procardz, index) => (
+                                        <Card key={index} className='w-[200px] min-h-[320px] py-0  border white shadow-lg CardResp crdupse' onClick={() => setHoveredProduct(procardz)} >
                                             <img
-                                                src={items.image}
+                                                src={procardz.image}
                                                 alt='products'
                                                 style={{ objectFit: "fill" }}
                                                 loading='lazy'
@@ -88,11 +89,11 @@ const ProductsSection = () => {
                                             />
                                             <CardHeader className='text-center langugP7 crdHd  h-[150px] '>
                                                 <CardTitle className=' line-clamp-1 fontFNM'>
-                                                    <h1 className=''> {items.name} </h1>
+                                                    <h1 className=''> {procardz.name} </h1>
                                                 </CardTitle>
-                                                <h1 className='mt-1 fontPric'> <span className='text-red-600'>RS</span> : {items.price}  </h1>
+                                                <h1 className='mt-1 fontPric'> <span className='text-red-600'>RS</span> : {procardz.price}  </h1>
                                                 <CardDescription className='line-clamp-2  fontDesc'>
-                                                    <h1 > {items.desc} </h1>
+                                                    <h1 > {procardz.desc} </h1>
                                                 </CardDescription>
                                                 <div className='flex justify-center gap-2 crdstr '>
                                                     <FaStar className='text-yellow-500' />
@@ -102,7 +103,7 @@ const ProductsSection = () => {
                                                     <FaStar />
                                                 </div>
                                                 <div className='text-center' >
-                                                    <Button className='w-30 bg-black rounded-sm langugP2 mb-1 ctgbtn' onClick={() => handleBuyNow(items)}>Buy Now</Button>
+                                                    <Button className='w-30 bg-black rounded-sm langugP2 mb-1 ctgbtn' onClick={() => handleBuyNow(procardz)}>Buy Now</Button>
                                                 </div>
                                             </CardHeader>
                                         </Card>
@@ -110,18 +111,19 @@ const ProductsSection = () => {
                                 }
                             </div>
                         ))
-
                         }
                     </div>
-                    {/* {hoveredProduct && (
-                    <div className='absolute z-50 upcrdhnd'>
-                        <CardsUp
-                            ProCardzs={hoveredProduct}
-                            closeCard={() => setHoveredProduct(null)}
-                        />
-                    </div>
-                )
-                } */}
+                    {hoveredProduct && (
+                        <div className='crtlupr'>
+                            <div className=' z-100 upcrdhnd inset-50 left-0'>
+                                <CardsUp
+                                    ProCardzs={hoveredProduct}
+                                    closeCard={() => setHoveredProduct(null)}
+                                />
+                            </div>
+                        </div>
+                    )
+                    }
                 </div>
             </div>
             <div className='flex items-center justify-center mt-30'>

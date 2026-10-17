@@ -107,15 +107,6 @@ const CPUSection = () => {
                         </div>
                       </CardHeader>
                     </Card>
-                    {hoveredProduct === items && (
-                      <div className='absolute top-10 left-10 z-50  overflow-y-auto'>
-                        <CardsUp
-                          ProCardzs={hoveredProduct}
-                          closeCard={() => setHoveredProduct(null)}
-                        />
-                      </div>
-                    )
-                    }
                   </div>
                 ))
               }
@@ -124,7 +115,17 @@ const CPUSection = () => {
 
           }
         </div>
+
       </div>
+      {hoveredProduct && (
+        <div className='absolute top-50 z-50  overflow-y-auto upcrdhnd'>
+          <CardsUp
+            ProCardzs={hoveredProduct}
+            closeCard={() => setHoveredProduct(null)}
+          />
+        </div>
+      )
+      }
     </div>
   )
 }

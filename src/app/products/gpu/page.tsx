@@ -108,15 +108,7 @@ const GPUSection = () => {
                         </div>
                       </CardHeader>
                     </Card>
-                    {hoverProducts === items && (
-                      <div className='absolute top-10 left-10 z-50  overflow-y-auto'>
-                        <CardsUp
-                          ProCardzs={hoverProducts}
-                          closeCard={() => setHoveredProducts(null)}
-                        />
-                      </div>
-                    )
-                    }
+
                   </div>
                 ))
               }
@@ -126,6 +118,15 @@ const GPUSection = () => {
           }
         </div>
       </div>
+        {hoverProducts && (
+          <div className='absolute top-50  z-50  overflow-y-auto upcrdhnd'>
+            <CardsUp
+              ProCardzs={hoverProducts}
+              closeCard={() => setHoveredProducts(null)}
+            />
+          </div>
+        )
+        }
     </div>
   )
 }

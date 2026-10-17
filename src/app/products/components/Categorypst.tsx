@@ -92,7 +92,7 @@ const Categorypst = ({ selectItem }: comp) => {
 
     return (
         <div className='container relative mx-none pxde'>
-            <div className='flex  justify-center items-center mt-25 '>
+            <div className='flex  justify-center items-center mt-25'>
                 <div className='py-0'>
                     {products && ((
                         <div className=' w-full CardXrp'>
@@ -126,15 +126,6 @@ const Categorypst = ({ selectItem }: comp) => {
                                                 </div>
                                             </CardHeader>
                                         </Card>
-                                        {hoverProducts === items && (
-                                            <div className='absolute top-10 left-10 z-50  overflow-y-auto'>
-                                                <CardsUp
-                                                    ProCardzs={hoverProducts}
-                                                    closeCard={() => setHoveredProducts(null)}
-                                                />
-                                            </div>
-                                        )
-                                        }
                                     </div>
                                 ))
                             }
@@ -144,6 +135,15 @@ const Categorypst = ({ selectItem }: comp) => {
                     }
                 </div>
             </div>
+            {hoverProducts && (
+                <div className='absolute top-50   z-50  overflow-y-auto upcrdhnd'>
+                    <CardsUp
+                        ProCardzs={hoverProducts}
+                        closeCard={() => setHoveredProducts(null)}
+                    />
+                </div>
+            )
+            }
         </div>
     )
 }

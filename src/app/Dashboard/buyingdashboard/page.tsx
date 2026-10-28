@@ -129,7 +129,7 @@ const BuyingDashBoard = () => {
             </div>
             <div>
                 {hoveredProduct && (
-                    <div className='absolute inset-0 fixed flex  justify-center items-center bg-black/40 z-50 '>
+                    <div className='absolute left-10 inset-0 fixed flex justify-center items-center  z-50 '>
                         {
                             <CardsUp
                                 ProCardzs={hoveredProduct}

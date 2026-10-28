@@ -26,7 +26,9 @@ function ConSearchBar() {
     const router = useRouter()
 
     const [hoverProducts, setHoveredProducts] = useState<products | null>(null)
+    const [clickpro, setClickpro] = useState<products | null>(null)
     const [products, setProducts] = useState<products[]>([])
+
 
     const searchparams = useSearchParams()
     const querysearch = (searchparams?.get("query") || "");
@@ -101,7 +103,10 @@ function ConSearchBar() {
                             {
                                 filteredProducts.map((items, index) => (
                                     <div key={index} className='relative p-1'>
-                                        <Card className='w-[200px] min-h-[320px] py-0  border white shadow-lg CardResp' onClick={() => setHoveredProducts(items)}>
+                                        <Card className='w-[200px] min-h-[320px] py-0  border white shadow-lg CardResp' onClick={() => {
+                                            setHoveredProducts(items)
+                                            setClickpro(items)
+                                        }}>
                                             <img
                                                 src={items.image}
                                                 alt=''
@@ -128,11 +133,11 @@ function ConSearchBar() {
                                                 </div>
                                             </CardHeader>
                                         </Card>
-                                        {hoverProducts === items && (
-                                            <div className='absolute top-10 left-10 z-50  overflow-y-auto'>
+                                        {clickpro === items && (
+                                            <div className='absolute top-10 left-10 z-50  overflow-y-auto upcrdhndx'>
                                                 <CardsUp
-                                                    ProCardzs={hoverProducts}
-                                                    closeCard={() => setHoveredProducts(null)}
+                                                    ProCardzs={clickpro}
+                                                    closeCard={() => setClickpro(null)}
                                                 />
                                             </div>
                                         )
@@ -159,6 +164,15 @@ function ConSearchBar() {
                     )
                     }
                 </div>
+                {hoverProducts && (
+                    <div className='absolute top-[18rem] z-50  overflow-y-auto upcrdhnd'>
+                        <CardsUp
+                            ProCardzs={hoverProducts}
+                            closeCard={() => setHoveredProducts(null)}
+                        />
+                    </div>
+                )
+                }
 
             </div>
 

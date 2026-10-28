@@ -138,10 +138,8 @@ const HeaderPAge = () => {
                             {/* </Button> */}
                         </span>
                     </div>
-                    <div className='rpzp flex justify-center   white items-center'>
-                        {
-                            <LogMenu />
-                        }
+                    <div className=' rpzp flex justify-center white items-center'>
+                        <LogMenu />
                     </div>
                 </div>
             </div >

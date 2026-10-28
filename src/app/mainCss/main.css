@@ -25,74 +25,35 @@
     }
 
 
-
     .crdupse:hover {
-        width: 250px;
+        width: 300px;
         height: 100%;
-        transition: 0.8s ease-out;
+        transition: 0.6s ease-out;
         transform: scale(1.2);
+        margin-left: 10px;
     }
 
-    @keyframes slideLeft {
-        0% {
-            opacity: 0;
-            transform: translateX(-100px);
-        }
-
-        50% {
-            opacity: 0.8;
-            transform: translateX(200px);
-        }
-
-        100% {
-            opacity: 1;
-            transform: translateX(0);
-        }
-    }
-
-
-    @keyframes updown {
-        0% {
-            opacity: 0;
-            transform: translateY(100px);
-        }
-
-        50% {
-            opacity: 0.5;
-            transform: translateY(50px);
-        }
-
-        75% {
-            opacity: 0.75;
-            transform: translate(20px);
-        }
-
-        100% {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-
-    /* 2. BASE CARD CLASS FOR ANIMATION */
     .crdanimtxs {
         opacity: 0;
-        /* Shuru mein element visible nahi hoga */
-        animation-name: updown;
-        animation-duration: 1s;
-        animation-timing-function: ease-out;
-        animation-fill-mode: forwards;
-        /* Animation end hone par position retain rakhega */
+        transform: translateY(200px);
+        transition: all 3s cubic-bezier(0.17, 1, 0.4, 1);
     }
 
-    /* 2. BASE CARD CLASS FOR ANIMATION */
+    .crdanimtxs.active-anisx {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+
     .crdanimt {
         opacity: 0;
-        /* Shuru mein element visible nahi hoga */
-        animation-name: slideLeft;
-        animation-duration: 3s;
-        animation-timing-function: ease-out;
-        animation-fill-mode: forwards;
-        /* Animation end hone par position retain rakhega */
+        transform: translateX(-50px);
+        transition: all 2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .crdanimt.active-ani {
+        opacity: 1;
+        transform: translateX(0);
     }
 
 
@@ -243,9 +204,11 @@
         inset: 0;
     } */
 
+    .upcrdhnd {
+        display: none;
+    }
+
     /* /// products */
-
-
 }
 
 @media screen and (min-width:1024px) and (max-width : 1199px) {
@@ -1221,61 +1184,31 @@
     }
 
 
-    @keyframes slideLeft {
-        0% {
-            opacity: 0;
-            transform: translateX(-100px);
-        }
-
-        50% {
-            opacity: 0.8;
-            transform: translateX(100px);
-        }
-
-        100% {
-            opacity: 1;
-            transform: translateX(0);
-        }
-    }
-
     /* 2. BASE CARD CLASS FOR ANIMATION */
     .crdanimt {
         opacity: 0;
-        /* Shuru mein element visible nahi hoga */
-        animation-name: slideLeft;
-        animation-duration: 3s;
-        animation-timing-function: ease-out;
-        animation-fill-mode: forwards;
-        /* Animation end hone par position retain rakhega */
+        transform: translateX(-50px);
+        transition: opacity 0.8s ease-out, transform 0.8s ease-out;
     }
 
-    @keyframes updown {
-        0% {
-            opacity: 0;
-            transform: translateY(100px);
-        }
-
-        50% {
-            opacity: 0.5;
-            transform: translateY(-50px);
-        }
-
-        100% {
-            opacity: 1;
-            transform: translateY(0);
-        }
+    .crdanimt.active-ani {
+        opacity: 1;
+        transform: translate(0);
     }
 
-    /* 2. BASE CARD CLASS FOR ANIMATION */
+
     .crdanimtxs {
         opacity: 0;
-        /* Shuru mein element visible nahi hoga */
-        animation-name: updown;
-        animation-duration: 3s;
-        animation-timing-function: ease-out;
-        animation-fill-mode: forwards;
-        /* Animation end hone par position retain rakhega */
+        transform: translateY(200px);
+        transition: all 3s cubic-bezier(0.17, 1, 0.4, 1);
     }
+
+    .crdanimtxs.active-anisx {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+
 
     /* uperCard */
 }

@@ -117,18 +117,18 @@ export function LogMenu() {
 
 
   return (
-    <div className="container moSizLog mb-1">
+    <div className="container moSizLog mb-1 ">
       <DropdownMenu open={isopen} onOpenChange={setIsOpen}>
         <DropdownMenuTrigger asChild>
           {
-            <button suppressHydrationWarning className="focus:outline-none me-5 mb-3 responXX ">
+            <button suppressHydrationWarning className="focus:outline-none me-5 mb-3 responXX">
               {user ? (
                 <div className={`w-11 h-11 flex justify-center items-center bg-blue-500 rounded-full text-2xl font-bold langugP8 iconresx ${changingcolors(user.email || "default")} `} >
 
                   {user.email?.charAt(0).toUpperCase()}
                 </div>
               ) : (
-                <FaRegCircleUser className="text-4xl flex items-center justify-center ms-1 mx-auto mt-2 iconres" />
+                <FaRegCircleUser className="text-4xl flex items-center justify-center  ms-1 mx-auto mt-2 iconres" />
               )
               }
             </button>
@@ -170,8 +170,8 @@ export function LogMenu() {
 
 
               {activeform === "login" && (
-                <div className='mx-auto '>
-                  <Card className='p-8 w-full max-w-sm border-0  '>
+                <div className='mx-auto'>
+                  <Card className='p-8 max-w-sm border-0'>
                     <h1 className='text-xl font-bold text-center langugP2'>Log In</h1>
                     <div className='space-y-2'>
                       <Label className="mb-2  langugP8 fontSizei">Email</Label>
@@ -189,13 +189,13 @@ export function LogMenu() {
               )}
 
               {activeform === "signup" && (
-                <div className=' flex justify-center items-center  '>
+                <div className='flex justify-center items-center '>
                   <Card className='p-5 w-full border-0  '>
                     <h1 className='text-xl font-bold text-center langugP8'>Sgin Up</h1>
                     <div className='flex justify-around items-center '>
-                      <div className=' flex flex-col gap-1 leading-relaxed spcxsN'>
+                      <div className=' flex flex-col gap-1 leading-relaxed spcxsN '>
                         <Label className=" langugP2 pynam me-2">Name</Label>
-                        <Input value={name} className=' border-gray-500 w-33 spcxs' onChange={(e) => setName(e.target.value)} placeholder='Your Name' />
+                        <Input value={name} className=' border-gray-500 me-4  rounded w-25 ' onChange={(e) => setName(e.target.value)} placeholder='Your Name' />
                       </div>
                       <div className='leading-relaxed flex flex-col gap-1 spcxsN '>
                         <Label className="langugP2  pynam ">UserName</Label>

@@ -1,5 +1,4 @@
 "use client"
-import React from 'react'
 import { useEffect, useState } from "react"
 import { addDoc, collection, getDocs } from "firebase/firestore"
 import { db } from "@/lib/firebase"
@@ -27,6 +26,9 @@ type comp = {
 }
 
 const Categorypst = ({ selectItem }: comp) => {
+
+
+    // const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
 
 
     const [hoverProducts, setHoveredProducts] = useState<products | null>(null)
@@ -89,7 +91,26 @@ const Categorypst = ({ selectItem }: comp) => {
 
     })
 
+    // Apne component ke andar yeh useEffect rakh dein:
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    // Jaise hi card screen par nazar aayega, yeh class lag jayegi
+                    entry.target.classList.add('active-ani');
+                    // Ek dafa animate hone ke baad observer hata dein taaki baar baar na ho
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1 // Jaise hi card ka 10% hissa nazar aayega, animation chal paray gi
+        });
 
+        const cards = document.querySelectorAll('.crdanimt');
+        cards.forEach((card) => observer.observe(card));
+
+        return () => observer.disconnect();
+    }, [filterd]);
 
     return (
         <div className='container relative mx-none pxde'>
@@ -100,7 +121,7 @@ const Categorypst = ({ selectItem }: comp) => {
                             {
                                 filterd.map((items, index) => (
                                     <div key={index} className='relative'>
-                                        <Card className='w-[200px] min-h-[320px] py-0  border white shadow-lg CardResp' onClick={() => {
+                                        <Card style={{ transitionDelay: `${index * 150}ms` }} className='w-[200px] min-h-[320px] py-0  border white shadow-lg CardResp crdanimt' onClick={() => {
                                             setHoveredProducts(items)
                                             setClickpro(items)
                                         }}>
@@ -131,7 +152,7 @@ const Categorypst = ({ selectItem }: comp) => {
                                             </CardHeader>
                                         </Card>
                                         {clickpro === items && (
-                                            <div className=' absolute top-10 left-10 z-50  overflow-y-auto upcrdhndx'>
+                                            <div className='absolute top-10 left-10 z-50  overflow-y-auto upcrdhndx'>
                                                 <CardsUp
                                                     ProCardzs={clickpro}
                                                     closeCard={() => setClickpro(null)}
@@ -147,16 +168,16 @@ const Categorypst = ({ selectItem }: comp) => {
 
                     }
                 </div>
+                {hoverProducts && (
+                    <div className='absolute top-50 left-2 z-50 overflow-y-auto upcrdhnd'>
+                        <CardsUp
+                            ProCardzs={hoverProducts}
+                            closeCard={() => setHoveredProducts(null)}
+                        />
+                    </div>
+                )
+                }
             </div>
-            {hoverProducts && (
-                <div className='absolute top-50 z-50 overflow-y-auto upcrdhnd'>
-                    <CardsUp
-                        ProCardzs={hoverProducts}
-                        closeCard={() => setHoveredProducts(null)}
-                    />
-                </div>
-            )
-            }
         </div>
     )
 }

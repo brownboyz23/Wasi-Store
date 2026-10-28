@@ -50,10 +50,30 @@ const FeaturedPage = () => {
     return () => clearInterval(interval)
   }, [paused, images.length])
 
+
+  useEffect(() => {
+    const obsever = new IntersectionObserver((entry, observer) => {
+      entry.forEach((entries) => {
+        if (entries.isIntersecting) {
+          entries.target.classList.add('active-anisx')
+
+          observer.unobserve(entries.target)
+        }
+      })
+    }, {
+      threshold: 0.1
+    })
+
+    const cards = document.querySelectorAll('.crdanimtxs')
+    cards.forEach((cardz) => obsever.observe(cardz))
+
+    return () => obsever.disconnect()
+  })
+
   return (
     <div>
       <div className='fturproFX'>
-        <div
+        <div style={{ transitionDelay: "1" }}
           className="relative w-full overflow-hidden rounded-lg fturproF crdanimtxs"
           onMouseEnter={() => setPaused(true)}
           onMouseLeave={() => setPaused(false)}

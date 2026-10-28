@@ -66,6 +66,26 @@ const ProductsSection = () => {
         return curEl.category === "HomePro"
     })
 
+
+    useEffect(() => {
+        const obsever = new IntersectionObserver((entries, observer) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active-ani')
+
+                    observer.unobserve(entry.target)
+                }
+            })
+        }, {
+            threshold: 0.1
+        })
+
+        const cards = document.querySelectorAll(".crdanimt")
+        cards.forEach((card) => obsever.observe(card))
+
+        return () => obsever.disconnect();
+    }, [filtered])
+
     if (loading) return <h1 className='text-center text-2xl mb-30 tracking-wider semibold animate-pulse'>
         <span className=' animate-ping inline-block ml-1'>Loading...</span>
     </h1>
@@ -76,37 +96,39 @@ const ProductsSection = () => {
                 <div className='flex justify-center items-center mt-25'>
                     <div className='py-0'>
                         {products && ((
-                            <div className=' w-full CardXrp crdanimt'>
+                            <div className=' w-full CardXrp '>
                                 {
                                     filtered.map((procardz, index) => (
-                                        <Card key={index} className='w-[200px] min-h-[320px] py-0  border white shadow-lg CardResp crdupse' onClick={() => setHoveredProduct(procardz)} >
-                                            <img
-                                                src={procardz.image}
-                                                alt='products'
-                                                style={{ objectFit: "fill" }}
-                                                loading='lazy'
-                                                className='w-full  crdimg'
-                                            />
-                                            <CardHeader className='text-center langugP7 crdHd  h-[150px] '>
-                                                <CardTitle className=' line-clamp-1 fontFNM'>
-                                                    <h1 className=''> {procardz.name} </h1>
-                                                </CardTitle>
-                                                <h1 className='mt-1 fontPric'> <span className='text-red-600'>RS</span> : {procardz.price}  </h1>
-                                                <CardDescription className='line-clamp-2  fontDesc'>
-                                                    <h1 > {procardz.desc} </h1>
-                                                </CardDescription>
-                                                <div className='flex justify-center gap-2 crdstr '>
-                                                    <FaStar className='text-yellow-500' />
-                                                    <FaStar className='text-yellow-500' />
-                                                    <FaStar className='text-yellow-500' />
-                                                    <FaStar className='text-yellow-500' />
-                                                    <FaStar />
-                                                </div>
-                                                <div className='text-center' >
-                                                    <Button className='w-30 bg-black rounded-sm langugP2 mb-1 ctgbtn' onClick={() => handleBuyNow(procardz)}>Buy Now</Button>
-                                                </div>
-                                            </CardHeader>
-                                        </Card>
+                                        <div key={index} className='crdupse'>
+                                            <Card style={{ transitionDelay: `${index * 150}ms` }} className='w-[200px] min-h-[320px] py-0  border white shadow-lg CardResp  crdanimt  ' onClick={() => setHoveredProduct(procardz)} >
+                                                <img
+                                                    src={procardz.image}
+                                                    alt='products'
+                                                    style={{ objectFit: "fill" }}
+                                                    loading='lazy'
+                                                    className='w-full  crdimg'
+                                                />
+                                                <CardHeader className='text-center langugP7 crdHd  h-[150px] '>
+                                                    <CardTitle className=' line-clamp-1 fontFNM'>
+                                                        <h1 className=''> {procardz.name} </h1>
+                                                    </CardTitle>
+                                                    <h1 className='mt-1 fontPric'> <span className='text-red-600'>RS</span> : {procardz.price}  </h1>
+                                                    <CardDescription className='line-clamp-2  fontDesc'>
+                                                        <h1 > {procardz.desc} </h1>
+                                                    </CardDescription>
+                                                    <div className='flex justify-center gap-2 crdstr '>
+                                                        <FaStar className='text-yellow-500' />
+                                                        <FaStar className='text-yellow-500' />
+                                                        <FaStar className='text-yellow-500' />
+                                                        <FaStar className='text-yellow-500' />
+                                                        <FaStar />
+                                                    </div>
+                                                    <div className='text-center' >
+                                                        <Button className='w-30 bg-black rounded-sm langugP2 mb-1 ctgbtn' onClick={() => handleBuyNow(procardz)}>Buy Now</Button>
+                                                    </div>
+                                                </CardHeader>
+                                            </Card>
+                                        </div>
                                     ))
                                 }
                             </div>

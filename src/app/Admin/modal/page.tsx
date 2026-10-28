@@ -82,7 +82,7 @@ const EditModal = ({ hoverPro, isEdit, setEdit, setHover }: EditModal) => {
                         </Button>
                     </div>
                     {isEdit && (
-                        <div className='space-y-10 border-2 p-5 w-[400px] h-[450px] flex flex-col justify-center items-center rounded-md bg-white hplscsdxs'>
+                        <div className='space-y-10 border-2 p-5 w-[400px] h-[500px] flex flex-col justify-center items-center rounded-md bg-white hplscsdxs'>
                             <div><h1 className='text-xl text-gray-800 font-bold '>Edit Products</h1></div>
                             <div>
                                 <Input type='text' className='w-[380px] h-[40px] outBrder border-0 border-b hplscsde ' value={image} placeholder='Enter Image URL' onChange={(e) => setImage(e.target.value)} />

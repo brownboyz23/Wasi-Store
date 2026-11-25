@@ -18,7 +18,7 @@ const AdminPage = () => {
     const [email, setEmail] = useState("")
 
     const checkLog = () => {
-        if (email === 'wasiialiali@outlook.com' && password === '12345') {
+        if (email === 'brown' && password === '334466') {
             setAuthentic(true)
         } else {
             alert('Wrong Email Or Password')
